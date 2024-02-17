@@ -1,6 +1,4 @@
-{inputs, ...}:
-
-{
+{inputs, ...}: {
   imports = [
     inputs.pre-commit-hooks.flakeModule
   ];
@@ -11,6 +9,6 @@
 
     settings.hooks = {
       alejandra.enable = true;
-    }
-  }
+    };
+  };
 }
