@@ -11,10 +11,10 @@
       size = 12;
     };
 
-    #theme = {
-    #  name = "Nordic";
-    #  package = pkgs.nordic;
-    #};
+    theme = {
+     name = "Nordic";
+     package = pkgs.nordic;
+    };
 
     #iconTheme = {
     #  package = pkgs.papirus-nord.override {
@@ -57,12 +57,12 @@
     # gtk4.extraCss = builtins.readFile ./gtk.css;
   };
 
-  # home.sessionVariables.GTK_THEME = "Nordic";
+  home.sessionVariables.GTK_THEME = "Nordic";
 
-  #home.pointerCursor = {
-  #  name = "Nordzy-cursors";
-  #  package = pkgs.nordzy-cursor-theme;
-  #  size = 24;
-  #  gtk.enable = true;
-  #};
+  home.pointerCursor = {
+   name = "Nordzy-cursors";
+   package = pkgs.nordzy-cursor-theme;
+   size = 24;
+   gtk.enable = true;
+  };
 }

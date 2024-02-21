@@ -15,7 +15,7 @@ in {
     ./rofi.nix
     #./swaync
     #./swaylock.nix
-    #./theme
+    ./theme
     #./waybar
     #./wlogout
     #./xdg.nix
