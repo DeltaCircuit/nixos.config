@@ -28,11 +28,12 @@
     inherit (self) outputs;
     lib = nixpkgs.lib // home-manager.lib;
     systems = ["x86_64-linux"];
-    forEachSystem = f: lib.genAttrs systems (sys: f pkgsFor.${sys});
-    pkgsFor = nixpkgs.legacyPackages;
     imports = [
       ./pre-commit-hooks.nix
     ];
+    forEachSystem = f: lib.genAttrs systems (sys: f pkgsFor.${sys});
+    pkgsFor = nixpkgs.legacyPackages;
+   
   in {
     inherit lib;
     # nixosModules = import ./modules/nixos;
@@ -40,6 +41,8 @@
     # overlays = import ./overlays {inherit inputs outputs;};
     # packages = forEachSystem (pkgs: import ./pkgs {inherit pkgs;});
     # devShells = forEachSystem (pkgs: import ./shell.nix {inherit pkgs inputs;});
+
+
 
     nixosConfigurations = {
       precision = lib.nixosSystem {

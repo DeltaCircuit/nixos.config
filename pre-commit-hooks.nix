@@ -6,6 +6,7 @@
   ];
 
   perSystem.pre-commit = {
+    check.enable = true;
     settings.excludes = ["flake.lock"];
 
     settings.hooks = {
