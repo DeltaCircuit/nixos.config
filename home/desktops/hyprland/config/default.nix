@@ -28,9 +28,9 @@
       };
 
       general = {
-        gaps_in = 3;
-        gaps_out = 5;
-        border_size = 3;
+        gaps_in = 5;
+        gaps_out = 20;
+        border_size = 2;
         active_border_color = "0xff${config.colorscheme.palette.base07}";
         inactive_border_color = "0xff${config.colorscheme.palette.base02}";
       };
