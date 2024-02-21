@@ -13,10 +13,14 @@ in {
       enable = true;
       # environment = {};
 
-      # font = {};
+      font = {
+        name = config.my.settings.fonts.monospace;
+      };
+
       shellIntegration = {
         enableZshIntegration = true;
       };
+      theme = "Nord";
     };
   };
 }
