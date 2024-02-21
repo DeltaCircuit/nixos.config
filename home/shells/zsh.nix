@@ -34,6 +34,10 @@ in {
       initExtra = ''
         ${cfg.initExtra}
       '';
+
+      dirHashes = {
+        nixconfig = "$HOME/.config/nix-config";
+      };
     };
   };
 }
