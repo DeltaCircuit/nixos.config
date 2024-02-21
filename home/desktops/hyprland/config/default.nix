@@ -14,8 +14,8 @@ in {
       package = pkgs.hyprland;
 
       reloadConfig = true;
-      #systemdIntegration = true;
-      #recommendedEnvironment = true;
+      systemdIntegration = true;
+      recommendedEnvironment = true;
       #xwayland.enable = true;
 
       config = {
@@ -62,7 +62,7 @@ in {
         ];
 
         exec_once = [
-          #"dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+          "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
           #"${pkgs.swaynotificationcenter}/bin/swaync"
           #"${pkgs.kanshi}/bin/kanshi"
           #"${pkgs.nur.repos."999eagle".swayaudioidleinhibit}/bin/sway-audio-idle-inhibit -w"
@@ -71,7 +71,7 @@ in {
           #"${pkgs.trayscale}/bin/trayscale --hide-window"
           #"mullvad-gui"
           #"solaar -w hide"
-          #"blueman-applet"b
+          "blueman-applet"
           "hyprctl setcursor Nordzy-cursors 24"
         ]
         ++ (if config.modules.programs.waybar.enable then [ "${pkgs.waybar}/bin/waybar" ] else [])
