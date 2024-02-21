@@ -9,8 +9,17 @@
   ];
 
   modules.nixos = {
-    zsh.enable = true;
-    services.blueman.enable = true;
+    shells = {
+      zsh.enable = true;
+    };
+
+    services = {
+      blueman.enable = true;
+    };
+
+    wms = {
+      hyprland.enable = true;
+    };
   };
 
   networking = {
@@ -70,14 +79,6 @@
   # Bluetooth
   hardware.bluetooth.enable = true;
 
-  # Hyprland
-  programs = {
-   hyprland = {
-     enable = true;
-   };
-  };
-
- 
   hardware.opengl.extraPackages = with pkgs; [
     intel-media-driver
   ];

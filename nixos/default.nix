@@ -4,10 +4,10 @@
   imports = [
     inputs.home-manager.nixosModules.home-manager
     ./nix.nix
-    ./pipewire.nix
     ./fonts.nix
-    ./programs
+    ./shells
     ./services
+    ./wms
   ];
 
   home-manager.extraSpecialArgs = { inherit inputs outputs; };

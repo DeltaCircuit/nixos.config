@@ -5,9 +5,9 @@
   ...
 }:
 with lib; let
-  cfg = config.modules.nixos.zsh;
+  cfg = config.modules.nixos.shells.zsh;
 in {
-  options.modules.nixos.zsh = {
+  options.modules.nixos.shells.zsh = {
     enable = mkEnableOption "Enable ZSH";
   };
 
