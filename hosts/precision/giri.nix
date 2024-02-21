@@ -13,6 +13,8 @@
       mpd.enable = true;
       mpd.runas = "giri";
       vscode.enable = true;
+      firefox.enable = true;
+      git.enable = true;
     };
 
     nixpkgs.config.allowUnfree = true;

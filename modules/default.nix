@@ -8,5 +8,7 @@
     ./hyprland
     ./mpd
     ./vscode
+    ./firefox
+    ./git
   ];
 }
