@@ -7,5 +7,6 @@
     ./starship    
     ./waybar
     ./rclone.nix
+    ./fd.nix
   ];
 }
