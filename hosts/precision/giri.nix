@@ -13,6 +13,7 @@
       editors.vscode.enable = true;
       terminal.alacritty.enable = true;
       programs.fzf.enable = true;
+      programs.pcmanfm.enable = true;
     };
 
     my.settings = {
