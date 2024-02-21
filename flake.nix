@@ -40,9 +40,6 @@
 
         formatter = pkgs.alejandra;
       };
-
-      flake = {
-      };
     };
 
   inputs = {
