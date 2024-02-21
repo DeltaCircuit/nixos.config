@@ -13,8 +13,8 @@
   };
 
   home = {
-    username = lib.mkDefault "giri";
-    homeDirectory = lib.mkDefault "/home/${config.home.username}";
+    username = "giri";
+    homeDirectory = "/home/giri";
     stateVersion = "23.11";
   };
 }
