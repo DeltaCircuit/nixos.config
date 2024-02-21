@@ -7,6 +7,9 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    hyprland-nix.url = "github:spikespaz/hyprland-nix";
+    nix-colors.url = "github:misterio77/nix-colors";
   };
 
   outputs = {
@@ -23,7 +26,7 @@
   in {
     inherit lib;
     # nixosModules = import ./modules/nixos;
-    # homeManagerModules = import ./modules/home-manager;
+    homeManagerModules = import ./modules/home-manager;
     # overlays = import ./overlays {inherit inputs outputs;};
     # packages = forEachSystem (pkgs: import ./pkgs {inherit pkgs;});
     # devShells = forEachSystem (pkgs: import ./shell.nix {inherit pkgs inputs;});
