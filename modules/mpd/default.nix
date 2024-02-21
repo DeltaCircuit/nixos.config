@@ -28,8 +28,8 @@ in {
             type "pipewire"
             name "pipewire output"
           }
-        ''
-      }
-    }
+        '';
+      };
+    };
   };
 }
