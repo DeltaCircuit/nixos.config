@@ -8,6 +8,11 @@ with lib; let
 in {
   options.modules.shells.zsh = {
     enable = mkEnableOption "enable zsh configuration";
+    initExtra = mkOption {
+      type = types.str;
+      description = "Extra zshrc entries";
+      default = "";
+    };
   };
 
   config = mkIf cfg.enable {
@@ -27,11 +32,7 @@ in {
       };
 
       initExtra = ''
-        ${
-          if config.modules.programs.yazi.enable
-          then lib.fileContents ./helpers/yazi.sh
-          else ""
-        }
+        ${cfg.initExtra}
       '';
     };
   };

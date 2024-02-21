@@ -39,6 +39,9 @@
 
       shells = {
         zsh.enable = true;
+        zsh.initExtra = ''
+          ${lib.fileContents ./shell_helpers/unlock_data.sh}
+        '';
       };
 
       terminals = {
