@@ -9,23 +9,23 @@ in {
     programs.waybar ={
       settings = [{
         layer = "top";
-        # modules-left = [
-        #   "hyprland/workspaces"
-        #   "hyprland/window"
-        # ];
+        modules-left = [
+          "hyprland/workspaces"
+          "hyprland/window"
+        ];
 
-        # modules-center = [];
+        modules-center = [];
 
-        # modules-right = [
-        #   "pulseaudio"
-        #   "network"
-        #   "cpu"
-        #   "memory"
-        #   "backlight"
-        #   "battery"
-        #   "clock"
-        #   "tray"
-        # ];
+        modules-right = [
+          "pulseaudio"
+          "network"
+          "cpu"
+          "memory"
+          "backlight"
+          "battery"
+          "clock"
+          "tray"
+        ];
 
         "hyprland/workspaces" = {
           format = "{icon}";
@@ -41,6 +41,10 @@ in {
         "hyprland/window" = {
           separate-outputs = true;
           "max-length" =  200;
+        };
+
+        tray = {
+          spacing = 10;
         };
 
       }];
