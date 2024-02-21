@@ -16,6 +16,7 @@
       programs.pcmanfm.enable = true;
       programs.direnv.enable = true;
       programs.rofi.enable = true;
+      programs.starship.enable = true;
     };
 
     my.settings = {
