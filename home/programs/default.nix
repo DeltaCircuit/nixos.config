@@ -5,5 +5,6 @@
     ./direnv.nix
     ./rofi.nix
     ./starship    
+    ./waybar
   ];
 }

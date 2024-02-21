@@ -18,6 +18,7 @@
       programs.rofi.enable = true;
       programs.starship.enable = true;
       services.dunst.enable = true;
+      programs.waybar.enable = true;
     };
 
     my.settings = {
