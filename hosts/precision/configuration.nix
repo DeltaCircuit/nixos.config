@@ -20,7 +20,7 @@
       luks = {
         devices = {
           crypt = {
-            device = "/dev/disks/by-uuid/599e2922-5fa6-47df-b655-f370b046695f";
+            device = "/dev/disk/by-uuid/599e2922-5fa6-47df-b655-f370b046695f";
             preLVM = true;
             allowDiscards = true;
           };
@@ -74,7 +74,7 @@
   # ZSH
   programs.zsh.enable = true;
 
-  hardware.opengl.extraPackages = with pkgs;dw [
+  hardware.opengl.extraPackages = with pkgs; [
     intel-media-driver
   ];
 }
