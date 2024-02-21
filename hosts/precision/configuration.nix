@@ -8,7 +8,10 @@
 
   imports = [
     ./hardware-configuration.nix
-  ]
+    ../../nixos
+    ../../nixos/users/giri.nix
+  ];
+
   boot = {
     loader = {
       systemd-boot = {

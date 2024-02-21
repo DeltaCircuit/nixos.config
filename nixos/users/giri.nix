@@ -11,7 +11,6 @@ in {
     initialPassword = "nixos";
     description = "giri";
     shell = pkgs.zsh;
-    extraGroups = [ "wheel" "input" "audio" "video" "networkmanager" ];
     extraGroups = [
       "wheel"
       "audio"
