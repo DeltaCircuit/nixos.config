@@ -66,18 +66,6 @@
     };
   };
 
-  # Giri's User
-  users.users.giri = {
-    isNormalUser = true;
-    description = "Account of Giri";
-    extraGroups = [ "wheel" "networkmanager" "audio" "video"];
-    home = "/home/giri";
-    createHome = true;
-    shell = pkgs.zsh;
-    packages = with pkgs; [
-    ];
-  };
-
   # Bluetooth
   hardware.bluetooth.enable = true;
 
