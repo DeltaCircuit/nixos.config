@@ -43,9 +43,9 @@
         FULLSCREEN_ONLY = 2;
       in {
         vrr = 2;
-        disable_hyprland_logo = true;
-        disable_splash_rendering = true;
-        force_default_wallpaper = 0;
+        # disable_hyprland_logo = true;
+        # disable_splash_rendering = true;
+        # force_default_wallpaper = 0;
         variable_framerate = true;
         variable_refresh = FULLSCREEN_ONLY;
         disable_autoreload = true;

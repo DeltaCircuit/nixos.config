@@ -61,6 +61,7 @@ in {
       "SUPER, Return" = "exec, ${config.my.settings.default.terminal}";
       "SUPER, a" = "exec, ${pkgs.rofi}/bin/rofi -show drun -mode drun";
       "SUPER, Q" = "killactive,";
+      "SUPER, M" = "exit,";
       "SUPER, F" = "Fullscreen,0";
       "SUPER, R" = "exec, ${resize}/bin/resize";
       "SUPER, Space" = "togglefloating,";
