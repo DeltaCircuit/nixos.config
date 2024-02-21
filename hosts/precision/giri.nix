@@ -23,6 +23,7 @@
       browsers.firefox.enable = true;
       wms.hyprland.enable = true;
       shell.zsh.enable = true;
+      editors.vscode.enable = true;
     };
 
     my.settings = {

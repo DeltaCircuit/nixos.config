@@ -19,6 +19,7 @@
       ./browsers/firefox.nix
 
       #./editors/nvim
+      ./editors/vscode
 
       #./multiplexers/tmux.nix
       #./multiplexers/zellij
