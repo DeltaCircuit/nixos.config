@@ -8,5 +8,6 @@
     ./waybar
     ./rclone.nix
     ./fd.nix
+    ./yazi
   ];
 }

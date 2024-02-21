@@ -162,6 +162,15 @@ config.modules.programs.starship.enable = true;
 ```nix
 config.modules.programs.waybar.enable = true;
 ```  
+- yazi <kbd>home</kbd>
+
+```nix
+config.modules.programs.yazi.enable = true;
+```  
+Also installs
+- imagemagick
+- file
+
 ### Services  
 
 - blueman-applet <kbd>home</kbd> <kbd>nixos</kbd>
