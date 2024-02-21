@@ -30,6 +30,9 @@
     systems = ["x86_64-linux"];
     forEachSystem = f: lib.genAttrs systems (sys: f pkgsFor.${sys});
     pkgsFor = nixpkgs.legacyPackages;
+    imports = [
+      ./pre-commit-hooks.nix
+    ];
   in {
     inherit lib;
     # nixosModules = import ./modules/nixos;
