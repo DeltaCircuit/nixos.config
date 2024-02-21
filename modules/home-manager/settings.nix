@@ -49,7 +49,7 @@ in {
       monospace = mkOption {
         type = types.str;
         description = "Font for monospace usage";
-        default = "FiraCode Nerdfont";
+        default = "FiraCode Nerd Font Mono";
       };
     };
   };

@@ -24,7 +24,7 @@
       display-window = " 﩯  Window";
       display-Network = " 󰤨  Network";
       sidebar-mode = true;
-      #font = config.my.settings.fonts.monospace;
+      font = config.my.settings.fonts.monospace;
     };
     theme = let
       inherit (config.lib.formats.rasi) mkLiteral;
