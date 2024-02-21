@@ -12,8 +12,8 @@
     settings.excludes = ["flake.lock"];
 
     settings.hooks = {
-      # alejandra.enable = true;
-      # nil.enable = true;
+      alejandra.enable = true;
+      nil.enable = true;
     };
   };
 }
