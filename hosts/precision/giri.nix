@@ -29,6 +29,7 @@
         fd.enable = true;
         yazi.enable = true;
         ripgrep.enable = true;
+        gpg.enable = true;
       };
 
       services = {
@@ -73,6 +74,10 @@
       username = "giri";
       homeDirectory = "/home/giri";
       stateVersion = "23.11";
+
+      packages = [
+        pkgs.imagemagick
+      ];
     };
   };
 }

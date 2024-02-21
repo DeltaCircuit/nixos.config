@@ -10,5 +10,6 @@
     ./fd.nix
     ./yazi
     ./ripgrep.nix
+    ./gpg.nix
   ];
 }
