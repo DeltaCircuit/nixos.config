@@ -4,7 +4,7 @@ let
   ifGroupsExists =  groups: builtins.filter (group: builtins.hasAttr group config.users.groups) groups;
 
 in {
-  home-manager.users.giri = import ../../hosts/${config.networking.hostName}/home.nix;
+  home-manager.users.giri = import ../../hosts/${config.networking.hostName}/giri.nix;
 
 
   users.users.giri = {

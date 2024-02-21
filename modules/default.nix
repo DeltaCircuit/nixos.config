@@ -6,5 +6,6 @@
   imports = [
     ./zsh
     ./hyprland
+    ./mpd
   ];
 }

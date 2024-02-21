@@ -37,8 +37,7 @@
 
     homeConfigurations = {
       "giri@precision"= lib.homeManagerConfiguration {
-        modules = [./hosts/precision/home.nix];
-        username = "giri";
+        modules = [./hosts/precision/giri.nix];
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs outputs;};
       };
