@@ -6,6 +6,7 @@
     fira-code
     fira-code-symbols
     fira
+    font-awesome
   ];
 }
 
