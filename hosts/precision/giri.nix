@@ -39,7 +39,6 @@
       };
 
       terminals = {
-        alacritty.enable = true;
         kitty.enable = true;
       };
 
