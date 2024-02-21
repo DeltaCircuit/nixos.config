@@ -16,6 +16,7 @@
       inputs.nixpkgs.follows="nixpkgs";
       inputs.flake-utils.follows = "fu";
     };
+    flake-parts.url = "github:hercules-ci/flake-parts";
   };
 
   outputs = {
