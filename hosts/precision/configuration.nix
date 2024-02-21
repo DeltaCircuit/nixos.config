@@ -20,7 +20,7 @@
       luks = {
         devices = {
           crypt = {
-            device = "/dev/disk/by-uuid/599e2922-5fa6-47df-b655-f370b046695f";
+            device = "/dev/disk/by-uuid/10c73428-8bdf-4917-9b5e-220f4abac6d1";
             preLVM = true;
             allowDiscards = true;
           };
