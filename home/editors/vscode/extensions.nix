@@ -9,7 +9,8 @@
         rust-lang.rust-analyzer
         tamasfe.even-better-toml
         esbenp.prettier-vscode
-        pkief.material-icon-theme          
+        pkief.material-icon-theme     
+        arcticicestudio.nord-visual-studio-code     
       ];
   };
 };

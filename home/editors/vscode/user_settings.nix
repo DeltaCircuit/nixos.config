@@ -4,7 +4,7 @@
   programs = {
     vscode = {
       userSettings = {
-        "workbench.colorTheme"= "Default Dark Modern";
+        "workbench.colorTheme"= "Nord";
         "window.titleBarStyle"= "custom";
         "workbench.iconTheme"= "material-icon-theme";
         "[nix]"."editor.tabSize" = 2;
