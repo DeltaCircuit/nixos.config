@@ -11,12 +11,10 @@
 
   '';
 
-  outputs = {
-    flake-parts,
-    self,
-    ...
-  } @ inputs:
-    flake-parts.lib.mkFlake {inherit inputs;} {
+  outputs = {flake-parts, ...} @ inputs:
+    flake-parts.lib.mkFlake {inherit inputs;} ({self, ...}: let
+      inherit (self) outputs;
+    in {
       imports = [
         ./pre-commit-hooks.nix
       ];
@@ -51,8 +49,7 @@
           precision = inputs.nixpkgs.lib.nixosSystem {
             modules = [./hosts/precision/configuration.nix];
             specialArgs = {
-              inherit inputs;
-              outputs = self.outputs;
+              inherit inputs outputs;
             };
           };
         };
@@ -62,13 +59,12 @@
             modules = [./hosts/precision/giri.nix];
             pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
             extraSpecialArgs = {
-              inherit inputs;
-              outputs = self.outputs;
+              inherit inputs outputs;
             };
           };
         };
       };
-    };
+    });
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
