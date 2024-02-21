@@ -11,6 +11,6 @@
 
     settings.hooks = {
       alejandra.enable = true;
-    }
-  }
+    };
+  };
 }
