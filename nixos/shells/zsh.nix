@@ -12,9 +12,8 @@ in {
   };
 
   config = mkIf cfg.enable {
-    
-  # enable zsh autocompletion for system packages (systemd, etc)
-  environment.pathsToLink = ["/share/zsh"];
+    # enable zsh autocompletion for system packages (systemd, etc)
+    environment.pathsToLink = ["/share/zsh"];
 
     programs = {
       zsh = {
@@ -27,7 +26,6 @@ in {
           highlighters = ["main" "brackets" "pattern"];
         };
       };
-    };    
-
+    };
   };
 }

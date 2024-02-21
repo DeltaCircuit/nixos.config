@@ -1,13 +1,15 @@
-{ lib, config, ...}:
-
-with lib; let 
+{
+  lib,
+  config,
+  ...
+}:
+with lib; let
   cfg = config.modules.services.udiskie;
-
 in {
   options = {
     modules.services.udiskie = {
       enable = mkEnableOption "Enable udiskie";
-    };    
+    };
   };
 
   config = mkIf cfg.enable {

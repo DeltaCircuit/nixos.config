@@ -1,6 +1,10 @@
-{ inputs, pkgs, lib, config, ...}:
-
 {
+  inputs,
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
   programs = {
     vscode = {
       extensions = with pkgs.vscode-extensions; [
@@ -9,9 +13,9 @@
         rust-lang.rust-analyzer
         tamasfe.even-better-toml
         esbenp.prettier-vscode
-        pkief.material-icon-theme     
-        arcticicestudio.nord-visual-studio-code     
+        pkief.material-icon-theme
+        arcticicestudio.nord-visual-studio-code
       ];
+    };
   };
-};
 }

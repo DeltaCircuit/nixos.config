@@ -1,8 +1,9 @@
-{ config, lib, ...}:
-
 {
+  config,
+  lib,
+  ...
+}: {
   programs.alacritty.settings = {
-
     selection = {
       save_to_clipboard = true;
     };
@@ -18,9 +19,7 @@
       ];
     };
 
-
     colors = {
-
       primary = {
         background = "#2e3440";
         foreground = "#d8dee9";
@@ -106,6 +105,5 @@
 
       # size = 14.0;
     };
-
   };
 }

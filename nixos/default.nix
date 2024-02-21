@@ -1,6 +1,10 @@
-{ pkgs, inputs, outputs, lib, ... }:
-
 {
+  pkgs,
+  inputs,
+  outputs,
+  lib,
+  ...
+}: {
   imports = [
     inputs.home-manager.nixosModules.home-manager
     ./nix.nix
@@ -9,10 +13,8 @@
     ./services
     ./wms
   ];
-  
 
-  home-manager.extraSpecialArgs = { inherit inputs outputs; };
-
+  home-manager.extraSpecialArgs = {inherit inputs outputs;};
 
   services = {
     gvfs.enable = true;

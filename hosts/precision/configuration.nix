@@ -1,7 +1,9 @@
-{ config, lib, pkgs, ... }:
-
 {
-
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
   imports = [
     ./hardware-configuration.nix
     ../../nixos
@@ -27,7 +29,7 @@
       enable = true;
     };
     hostName = "precision";
-  }; 
+  };
 
   boot = {
     initrd = {
@@ -51,10 +53,7 @@
     };
   };
 
-  boot.supportedFilesystems = [ "ntfs" ];
-
-
-  
+  boot.supportedFilesystems = ["ntfs"];
 
   time.timeZone = "Asia/Kolkata";
 
@@ -62,7 +61,7 @@
   services.printing.enable = true;
 
   environment = {
-    defaultPackages = [ ];
+    defaultPackages = [];
     systemPackages = with pkgs; [
       acpi
       tlp
@@ -73,7 +72,7 @@
       mpd
     ];
   };
-  
+
   system.stateVersion = "23.11";
 
   # Bluetooth
@@ -83,4 +82,3 @@
     intel-media-driver
   ];
 }
-
