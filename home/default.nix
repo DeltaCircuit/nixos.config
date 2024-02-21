@@ -16,7 +16,7 @@
       #./programs
       #./scripts.nix
 
-      #./browsers/firefox.nix
+      ./browsers/firefox.nix
 
       #./editors/nvim
 
