@@ -4,6 +4,6 @@
     ./pcmanfm
     ./direnv.nix
     ./rofi.nix
-    ./starship
+    ./starship    
   ];
 }

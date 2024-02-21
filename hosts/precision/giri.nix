@@ -17,6 +17,7 @@
       programs.direnv.enable = true;
       programs.rofi.enable = true;
       programs.starship.enable = true;
+      services.dunst.enable = true;
     };
 
     my.settings = {

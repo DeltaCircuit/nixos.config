@@ -36,6 +36,8 @@
 
       #./security/sops.nix
       ./programs
+
+      ./services
     ]
     ++ builtins.attrValues outputs.homeManagerModules;
 
