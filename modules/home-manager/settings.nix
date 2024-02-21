@@ -38,5 +38,19 @@ in {
         Name of the host
       '';
     };
+
+    fonts = {
+      regular = mkOption {
+        type = types.str;
+        description = "Font for regular use";
+        default = "Fira Sans";
+      };
+
+      monospace = mkOption {
+        type = types.str;
+        description = "Font for monospace usage";
+        default = "FiraCode Nerdfont";
+      };
+    };
   };
 }
