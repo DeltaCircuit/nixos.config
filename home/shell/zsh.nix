@@ -20,6 +20,11 @@ in {
         styles = {"alias" = "fg=magenta";};
         highlighters = ["main" "brackets" "pattern"];
       };
+
+      shellAliases = {
+        reload = "cd $HOME/.config/nixos;home-manager switch --flake .";
+        rebuild = "cd $HOME/.config/nixos;sudo nixos-rebuild switch --flake .";        
+      };
     };
   };
 }
