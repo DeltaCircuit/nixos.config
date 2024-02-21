@@ -27,7 +27,7 @@
 
       #./shells/fish.nix
       #./shells/nushell.nix
-      #./shells/zsh.nix
+      ./shells/zsh.nix
 
       #./terminals/alacritty.nix
       #./terminals/foot.nix
