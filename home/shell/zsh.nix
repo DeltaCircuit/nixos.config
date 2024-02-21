@@ -22,8 +22,8 @@ in {
       };
 
       shellAliases = {
-        reload = "cd $HOME/.config/nixos;home-manager switch --flake .";
-        rebuild = "cd $HOME/.config/nixos;sudo nixos-rebuild switch --flake .";        
+        reload = "(cd $HOME/.config/nixos;home-manager switch --flake .)";
+        rebuild = "(cd $HOME/.config/nixos;sudo nixos-rebuild switch --flake .)";        
       };
     };
   };
