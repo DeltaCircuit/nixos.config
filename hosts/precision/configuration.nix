@@ -8,6 +8,10 @@
     ../../nixos/users/giri.nix
   ];
 
+  modules.nixos = {
+    zsh.enable = true;
+  };
+
   networking = {
     networkmanager = {
       enable = true;
@@ -71,9 +75,6 @@
   };
 
  
-  # ZSH
-  programs.zsh.enable = true;
-
   hardware.opengl.extraPackages = with pkgs; [
     intel-media-driver
   ];

@@ -6,6 +6,7 @@
     ./nix.nix
     ./pipewire.nix
     ./fonts.nix
+    ./programs
   ];
 
   home-manager.extraSpecialArgs = { inherit inputs outputs; };
