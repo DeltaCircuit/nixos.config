@@ -5,9 +5,9 @@ with lib; let
 
 in {
 
-  # imports = [
-  #   ./settings.nix
-  # ];
+  imports = [
+    ./settings.nix
+  ];
   
   options.modules.programs.waybar = {
     enable = mkEnableOption "Enable Waybar";
@@ -16,6 +16,8 @@ in {
   config = mkIf cfg.enable {
     programs.waybar = {
       enable = true;
+      systemd.enable = true;
+      systemd.target = "graphical-session-target";
     };
   };
 }
