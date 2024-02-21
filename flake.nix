@@ -11,7 +11,7 @@
 
   '';
 
-  outputs = {flake-parts, ...} @ inputs:
+  outputs = {flake-parts,self, ...} @ inputs:
     flake-parts.lib.mkFlake {inherit inputs;} {
       imports = [
         ./pre-commit-hooks.nix
@@ -39,6 +39,24 @@
         };
 
         formatter = pkgs.alejandra;
+      };
+
+      flake = {
+        homeManagerModules = import ./modules/home-manager;
+        nixosConfigurations = {
+          precision = inputs.nixpkgs.lib.nixosSystem {
+            modules = [./hosts/precision/configuration.nix];
+            specialArgs = {inherit inputs; outputs=self.outputs;};
+          };
+        };
+
+        homeConfigurations = {
+          "giri@precision"= inputs.home-manager.lib.homeManagerConfiguration {
+            modules = [./hosts/precision/giri.nix];
+            pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
+            extraSpecialArgs = {inherit inputs; outputs=self.outputs;};
+          };
+        };
       };
     };
 
