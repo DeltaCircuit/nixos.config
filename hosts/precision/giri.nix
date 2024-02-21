@@ -22,6 +22,7 @@
         direnv.enable = true;
         rofi.enable = true;
         waybar.enable = true;
+        rclone.enable = true;
       };
 
       services = {

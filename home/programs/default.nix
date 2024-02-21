@@ -6,5 +6,6 @@
     ./rofi.nix
     ./starship    
     ./waybar
+    ./rclone.nix
   ];
 }
