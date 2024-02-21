@@ -15,6 +15,7 @@
       programs.fzf.enable = true;
       programs.pcmanfm.enable = true;
       programs.direnv.enable = true;
+      programs.rofi.enable = true;
     };
 
     my.settings = {

@@ -12,7 +12,7 @@ in {
     ./config
     #./gammastep.nix
     #./kanshi.nix
-    ./rofi.nix
+    #./rofi.nix
     #./swaync
     #./swaylock.nix
     ./theme
