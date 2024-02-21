@@ -22,30 +22,30 @@
     colors = {
 
       primary = {
-        background = "#${config.colorscheme.colors.base00}";
-        foreground = "#${config.colorscheme.colors.base04}";
+        background = "#2e3440";
+        foreground = "#d8dee9";
         dim_foreground = "#a5abb6";
       };
 
       cursor = {
-        text = "#${config.colorscheme.colors.base00}";
-        cursor = "#${config.colorscheme.colors.base04}";
+        text = "#2e3440";
+        cursor = "#d8dee9";
       };
 
       vi_mode_cursor = {
-        text = "#${config.colorscheme.colors.base00}";
-        cursor = "#${config.colorscheme.colors.base04}";
+        text = "#2e3440";
+        cursor = "#d8dee9";
       };
 
       selection = {
         text = "CellForeground";
-        background = "#${config.colorscheme.colors.base03}";
+        background = "#4c566a";
       };
 
       search = {
         matches = {
           foreground = "CellBackground";
-          background = "#${config.colorscheme.colors.base0C}";
+          background = "#88c0d0";
         };
 
         # bar = {
@@ -55,25 +55,25 @@
       };
 
       normal = {
-        black = "#${config.colorscheme.colors.base01}";
-        red = "#${config.colorscheme.colors.base08}";
-        green = "#${config.colorscheme.colors.base0B}";
-        yellow = "#${config.colorscheme.colors.base0A}";
-        blue = "#${config.colorscheme.colors.base0D}";
-        magenta = "#${config.colorscheme.colors.base0E}";
-        cyan = "#${config.colorscheme.colors.base0C}";
-        white = "#${config.colorscheme.colors.base05}";
+        black = "#3b4252";
+        red = "#bf616a";
+        green = "#a3be8c";
+        yellow = "#ebcb8b";
+        blue = "#81a1c1";
+        magenta = "#b48ead";
+        cyan = "#88c0d0";
+        white = "#e5e9f0";
       };
 
       bright = {
-        black = "#${config.colorscheme.colors.base03}";
-        red = "#${config.colorscheme.colors.base08}";
-        green = "#${config.colorscheme.colors.base0B}";
-        yellow = "#${config.colorscheme.colors.base0A}";
-        blue = "#${config.colorscheme.colors.base0D}";
-        magenta = "#${config.colorscheme.colors.base0E}";
-        cyan = "#${config.colorscheme.colors.base07}";
-        white = "#${config.colorscheme.colors.base06}";
+        black = "#4c566a";
+        red = "#bf616a";
+        green = "#a3be8c";
+        yellow = "#ebcb8b";
+        blue = "#81a1c1";
+        magenta = "#b48ead";
+        cyan = "#8fbcbb";
+        white = "#eceff4";
       };
 
       dim = {
@@ -104,7 +104,7 @@
         style = "Italic";
       };
 
-      size = 14.0;
+      # size = 14.0;
     };
 
   };
