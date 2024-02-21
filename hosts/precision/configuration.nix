@@ -70,6 +70,7 @@
       pipewire
       wireplumber
       mpd
+      qt6.qtwayland
     ];
   };
 
