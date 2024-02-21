@@ -4,19 +4,19 @@
   ...
 }:
 with lib; let
-  cfg = config.modules.shells.zsh;
+  cfg = config.modules.shell.zsh;
 in {
-  options.modules.shells.zsh = {
+  options.modules.shell.zsh = {
     enable = mkEnableOption "enable zsh configuration";
   };
 
   config = mkIf cfg.enable {
     programs.zsh = mkIf cfg.enable {
       enable = true;
-      autosuggestions.enable = true;
+      enableAutosuggestions = true;
       syntaxHighlighting = {
         enable = true;
-        patterns = {"rm -rf *" = "fg=black,bg=red";};
+        #pattern = {"rm -rf *" = "fg=black,bg=red";};
         styles = {"alias" = "fg=magenta";};
         highlighters = ["main" "brackets" "pattern"];
       };

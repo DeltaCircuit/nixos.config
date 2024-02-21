@@ -8,7 +8,7 @@
 }: {
   imports =
     [
-      #inputs.nix-colors.homeManagerModule
+      inputs.nix-colors.homeManagerModule
       #inputs.nixvim.homeManagerModules.nixvim
       #inputs.nur.hmModules.nur
       #inputs.impermanence.nixosModules.home-manager.impermanence
@@ -23,11 +23,11 @@
       #./multiplexers/tmux.nix
       #./multiplexers/zellij
 
-      #./desktops/hyprland
+      ./desktops/hyprland
 
       #./shells/fish.nix
       #./shells/nushell.nix
-      ./shells/zsh.nix
+      ./shell/zsh.nix
 
       #./terminals/alacritty.nix
       #./terminals/foot.nix
@@ -43,7 +43,7 @@
     home-manager.enable = true;
   };
 
-  #home.sessionVariables.EDITOR = config.my.settings.default.editor;
+  home.sessionVariables.EDITOR = config.my.settings.default.editor;
 
   nixpkgs = {
     #overlays =
