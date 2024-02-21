@@ -7,5 +7,6 @@
     ./zsh
     ./hyprland
     ./mpd
+    ./vscode
   ];
 }
