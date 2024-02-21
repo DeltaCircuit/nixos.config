@@ -33,6 +33,7 @@
       #./terminals/alacritty.nix
       #./terminals/foot.nix
       #./terminals/wezterm
+      ./terminal/alacritty
 
       #./security/sops.nix
     ]

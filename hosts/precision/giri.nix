@@ -24,6 +24,7 @@
       wms.hyprland.enable = true;
       shell.zsh.enable = true;
       editors.vscode.enable = true;
+      terminal.alacritty.enable = true;
     };
 
     my.settings = {
