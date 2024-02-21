@@ -16,13 +16,14 @@ in {
           rust-lang.rust-analyzer
           tamasfe.even-better-toml
           esbenp.prettier-vscode
-          pkief.material-icon-theme
+          pkief.material-icon-theme          
         ];
 
         userSettings = {
           "workbench.colorTheme"= "Default Dark Modern";
           "window.titleBarStyle"= "custom";
           "workbench.iconTheme"= "material-icon-theme";
+          "[nix]"."editor.tabSize" = 2;
         };
       };
     };

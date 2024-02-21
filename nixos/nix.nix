@@ -4,7 +4,7 @@
   nix = {
     settings = {
       trusted-users = [ "root" "@wheel" ];
-      auto-optmize-store = lib.mkDefault true;
+      auto-optimise-store = lib.mkDefault true;
       use-xdg-base-directories = true;
       warn-dirty = false;
       experimental-features = [ "nix-command" "flakes" ];
