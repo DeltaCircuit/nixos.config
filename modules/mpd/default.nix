@@ -15,7 +15,7 @@ in {
           '';
         };
       };
-    }
+    };
   };
   options.modules.mpd = { enable = mkEnableOption "mpd"; };
 
