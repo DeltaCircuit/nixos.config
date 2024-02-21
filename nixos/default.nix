@@ -3,7 +3,7 @@
 {
   imports = [
     inputs.home-manager.nixosModules.home-manager
-    ./conf.nix
+    ./nix.nix
     ./pipewire.nix
     ./fonts.nix
   ];
