@@ -14,6 +14,7 @@
       terminal.alacritty.enable = true;
       programs.fzf.enable = true;
       programs.pcmanfm.enable = true;
+      programs.direnv.enable = true;
     };
 
     my.settings = {
