@@ -31,8 +31,8 @@
         gaps_in = 3;
         gaps_out = 5;
         border_size = 3;
-        active_border_color = "0xff${config.colorscheme.colors.base07}";
-        inactive_border_color = "0xff${config.colorscheme.colors.base02}";
+        active_border_color = "0xff${config.colorscheme.palette.base07}";
+        inactive_border_color = "0xff${config.colorscheme.palette.base02}";
       };
 
       decoration = {

@@ -31,13 +31,13 @@
     in {
       #"@import" = "default";
       "*" = {
-        bg-col = mkLiteral "#${config.colorscheme.colors.base00}";
-        bg-col-light = mkLiteral "#${config.colorscheme.colors.base00}";
-        border-col = mkLiteral "#${config.colorscheme.colors.base00}";
-        selected-col = mkLiteral "#${config.colorscheme.colors.base00}";
-        blue = mkLiteral "#${config.colorscheme.colors.base0D}";
-        fg-col = mkLiteral "#${config.colorscheme.colors.base05}";
-        fg-col2 = mkLiteral "#${config.colorscheme.colors.base08}";
+        bg-col = mkLiteral "#${config.colorscheme.palette.base00}";
+        bg-col-light = mkLiteral "#${config.colorscheme.palette.base00}";
+        border-col = mkLiteral "#${config.colorscheme.palette.base00}";
+        selected-col = mkLiteral "#${config.colorscheme.palette.base00}";
+        blue = mkLiteral "#${config.colorscheme.palette.base0D}";
+        fg-col = mkLiteral "#${config.colorscheme.palette.base05}";
+        fg-col2 = mkLiteral "#${config.colorscheme.palette.base08}";
         grey = mkLiteral "#737994";
         width = 600;
       };
