@@ -5,19 +5,6 @@
     ../../home
   ];
 
-
-  #config = {
-  #  modules = {
-  #    zsh.enable = true;
-  #    hyprland.enable = true;
-  #    mpd.enable = true;
-  #    mpd.runas = "giri";
-  #    vscode.enable = true;
-  #    firefox.enable = true;
-  #    git.enable = true;
-  #  };
-  # }
-
   config = {
     modules = {
       browsers.firefox.enable = true;
