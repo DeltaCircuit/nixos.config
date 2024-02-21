@@ -36,7 +36,7 @@
     };
 
     homeConfigurations = {
-      precision = lib.homeManagerConfiguration {
+      "giri@precision"= lib.homeManagerConfiguration {
         modules = [./hosts/precision/home.nix];
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs outputs;};
