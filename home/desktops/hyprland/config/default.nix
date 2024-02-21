@@ -67,6 +67,7 @@
         #"mullvad-gui"
         #"solaar -w hide"
         #"blueman-applet"
+        "hyprctl setcursor Nordzy-cursors 24"
       ];
     };
   };
