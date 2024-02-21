@@ -1,7 +1,7 @@
 {
+  config,
   inputs,
   lib,
-  config,
   ...
 }:
 with lib; let
@@ -16,7 +16,8 @@ in {
     programs.firefox = {
       enable = true;
       profiles.default = {
-        name = "${config.home.username}_${config.networking.hostName}";
+        name = "firefox_default";
+        #name = "${config.home.username}_${config.networking.hostName}";
       };
     };
   };
