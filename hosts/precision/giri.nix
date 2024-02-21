@@ -25,6 +25,7 @@
         rclone.enable = true;
         fd.enable = true;
         yazi.enable = true;
+        ripgrep.enable = true;
       };
 
       services = {

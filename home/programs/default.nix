@@ -9,5 +9,6 @@
     ./rclone.nix
     ./fd.nix
     ./yazi
+    ./ripgrep.nix
   ];
 }
