@@ -2,8 +2,10 @@
 
 {
   fonts.packages = with pkgs; [
-   font-awesome
-   fira-code-nerdfont
+    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
+    fira-code
+    fira-code-symbols
+    fira
   ];
 }
 
