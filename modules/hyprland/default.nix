@@ -10,7 +10,7 @@ in {
     home.packages = with pkgs; [
       rofi
       hyprland
-    ]
+    ];
 
     home.file.".config/hypr/hyprland.conf".source = ./hyprland.conf;
   }
