@@ -7,8 +7,7 @@
   ...
 }: {
   imports =
-    [
-      inputs.nix-colors.homeManagerModule
+    [      
       #inputs.nixvim.homeManagerModules.nixvim
       #inputs.nur.hmModules.nur
       #inputs.impermanence.nixosModules.home-manager.impermanence

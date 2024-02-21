@@ -31,8 +31,8 @@ in {
           gaps_in = 5;
           gaps_out = 20;
           border_size = 2;
-          active_border_color = "0xff${config.colorscheme.palette.base07}";
-          inactive_border_color = "0xff${config.colorscheme.palette.base02}";
+          active_border_color = "0xffd8dee9"; 
+          inactive_border_color = "0xff3b4252";
         };
 
         decoration = {
@@ -66,7 +66,7 @@ in {
           #"${pkgs.trayscale}/bin/trayscale --hide-window"
           #"mullvad-gui"
           #"solaar -w hide"
-          #"blueman-applet"
+          #"blueman-applet"b
           "hyprctl setcursor Nordzy-cursors 24"
         ];
       };
