@@ -10,6 +10,7 @@
 
   modules.nixos = {
     zsh.enable = true;
+    services.blueman.enable = true;
   };
 
   networking = {

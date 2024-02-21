@@ -16,9 +16,13 @@
       programs.pcmanfm.enable = true;
       programs.direnv.enable = true;
       programs.rofi.enable = true;
-      programs.starship.enable = true;
+      # programs.starship.enable = true;
       services.dunst.enable = true;
       programs.waybar.enable = true;
+      # services.udiskie.enable = true;
+      services = {
+        blueman-applet.enable = true;
+      };
     };
 
     my.settings = {

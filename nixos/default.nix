@@ -7,7 +7,15 @@
     ./pipewire.nix
     ./fonts.nix
     ./programs
+    ./services
   ];
 
   home-manager.extraSpecialArgs = { inherit inputs outputs; };
+
+
+  services = {
+    gvfs.enable = true;
+    udisks2.enable = true;
+    fwupd.enable = true;
+  };
 }

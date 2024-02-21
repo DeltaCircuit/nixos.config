@@ -74,7 +74,8 @@ in {
           #"blueman-applet"b
           "hyprctl setcursor Nordzy-cursors 24"
         ]
-        ++ (if config.modules.programs.waybar.enable then [ "${pkgs.waybar}/bin/waybar" ] else []);
+        ++ (if config.modules.programs.waybar.enable then [ "${pkgs.waybar}/bin/waybar" ] else [])
+        ++ (if config.modules.services.udiskie.enable then [ "udiskie &" ] else []);
       };
     };
   };
