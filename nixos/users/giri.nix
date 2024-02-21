@@ -6,6 +6,7 @@ let
 in {
   home-manager.users.giri = import ../../hosts/${config.networking.hostName}/home.nix;
 
+
   users.users.giri = {
     isNormalUser = true;
     initialPassword = "nixos";

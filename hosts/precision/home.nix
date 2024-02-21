@@ -7,6 +7,6 @@
 
   config.modules = {
     zsh.enable = true;
-    hyprland.enable = true;
+    hyprland.enable = false;
   };
 }
