@@ -39,6 +39,7 @@
 
       terminals = {
         alacritty.enable = true;
+        kitty.enable = true;
       };
 
       wms = {
@@ -51,7 +52,7 @@
       default = {
         shell = "${pkgs.zsh}/bin/zsh";
         browser = "firefox";
-        terminal = "alacritty";
+        terminal = "kitty";
       };
     };
 

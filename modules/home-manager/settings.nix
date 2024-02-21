@@ -13,7 +13,7 @@ in {
       };
 
       terminal = mkOption {
-        type = types.nullOr (types.enum ["alacritty"]);
+        type = types.nullOr (types.enum ["alacritty" "kitty" ]);
         description = "Default terminal";
         default = "alacritty";
       };

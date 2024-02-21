@@ -224,6 +224,10 @@ modules.nixos.shells.zsh.enable = true;
 ```nix
 config.modules.terminals.alacritty.enable = true;
 ```  
+- kitty <kbd>home</kbd>
+```nix
+config.modules.terminals.kitty.enable = true;
+```  
 ### Window Managers  
 
 - hyprland <kbd>home</kbd> <kbd>nixos</kbd>
