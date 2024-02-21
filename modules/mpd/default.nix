@@ -17,7 +17,6 @@ in {
       };
     };
   };
-  options.modules.mpd = { enable = mkEnableOption "mpd"; };
 
   config = mkIf cfg.enable {
     services = {
