@@ -12,6 +12,7 @@
       shell.zsh.enable = true;
       editors.vscode.enable = true;
       terminal.alacritty.enable = true;
+      programs.fzf.enable = true;
     };
 
     my.settings = {

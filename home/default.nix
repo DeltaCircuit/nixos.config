@@ -36,6 +36,7 @@
       ./terminal/alacritty
 
       #./security/sops.nix
+      ./programs
     ]
     ++ builtins.attrValues outputs.homeManagerModules;
 
