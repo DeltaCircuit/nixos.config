@@ -40,13 +40,13 @@ in {
       in {
         #"@import" = "default";
         "*" = {
-          bg-col = mkLiteral "#${config.colorscheme.palette.base00}";
-          bg-col-light = mkLiteral "#${config.colorscheme.palette.base00}";
-          border-col = mkLiteral "#${config.colorscheme.palette.base00}";
-          selected-col = mkLiteral "#${config.colorscheme.palette.base00}";
-          blue = mkLiteral "#${config.colorscheme.palette.base0D}";
-          fg-col = mkLiteral "#${config.colorscheme.palette.base05}";
-          fg-col2 = mkLiteral "#${config.colorscheme.palette.base08}";
+          bg-col = mkLiteral "#2e3440";
+          bg-col-light = mkLiteral "#2e3440";
+          border-col = mkLiteral "#2e3440";
+          selected-col = mkLiteral "#2e3440";
+          blue = mkLiteral "#81a1c1";
+          fg-col = mkLiteral "#e5e9f0";
+          fg-col2 = mkLiteral "#bf616a";
           grey = mkLiteral "#737994";
           width = 600;
         };
