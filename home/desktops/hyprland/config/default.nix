@@ -24,6 +24,7 @@ in {
           touchpad = {
             disable_while_typing = false;
             natural_scroll = true;
+            scroll_factor = 0.5;
           };
           numlock_by_default = true;
         };
@@ -34,6 +35,10 @@ in {
           border_size = 2;
           active_border_color = "0xffd8dee9"; 
           inactive_border_color = "0xff3b4252";
+        };
+
+        gestures = {
+          workspace_swipe = true;
         };
 
         decoration = {
