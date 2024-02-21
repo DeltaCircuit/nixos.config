@@ -91,12 +91,6 @@
     pulse.enable = true;
   };
 
-  # Nix Configurations  
-  nix = {
-    settings = {
-      experimental-features = [ "nix-command" "flakes" ];
-    };
-  };
   # Hyprland
   programs = {
    hyprland = {
