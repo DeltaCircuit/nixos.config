@@ -13,8 +13,10 @@ in {
     programs.zsh = {
       enable = true;
       enableCompletion = true;
-      enableAutoSuggestions = true;
-      enableSyntaxHighlighting = true;
+      enableAutosuggestions = true;
+      syntaxHighlighting = {
+        enable = true;
+      };
     };
   };
 }

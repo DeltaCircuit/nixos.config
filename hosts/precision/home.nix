@@ -3,7 +3,7 @@
 {
   imports = [
     ../../modules/default.nix 
-  ]
+  ];
 
   config.modules = {
     zsh.enable = true;
