@@ -25,6 +25,7 @@ in {
             disable_while_typing = false;
             natural_scroll = true;
           };
+          numlock_by_default = true;
         };
 
         general = {
