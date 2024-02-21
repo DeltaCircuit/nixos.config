@@ -38,6 +38,13 @@
 
     colorscheme = inputs.nix-colors.colorSchemes.catppuccin-mocha;
 
+    wayland.windowManager.hyprland.settings =  {
+      monitor = [
+        "DP-3,1920x1080,0x0,1"
+        "eDP-1,1920x1080,1920x0,1"
+      ];
+    };
+
     home = {
       username = "giri";
       homeDirectory = "/home/giri";
