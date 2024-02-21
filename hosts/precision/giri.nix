@@ -9,6 +9,7 @@
     zsh.enable = true;
     hyprland.enable = false;
     mpd.enable = true;
+    mpd.runas = "giri";
   };
 
   home = {
