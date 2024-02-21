@@ -1,6 +1,8 @@
-{inputs, ...}:
-
 {
+  inputs,
+  config,
+  ...
+}: {
   imports = [
     inputs.pre-commit-hooks.flakeModule
   ];
