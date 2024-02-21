@@ -15,6 +15,6 @@ in {
     home.packages = with pkgs; [
       pcmanfm
     ];
-    home.file.".config/pcmanfm/default/pcmanfm.conf".source = ./pcmanfm.conf;
+    #home.file.".config/pcmanfm/default/pcmanfm.conf".source = ./pcmanfm.conf;
   };
 }
