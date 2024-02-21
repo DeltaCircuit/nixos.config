@@ -11,6 +11,8 @@ in {
       alacritty
       rofi
       hyprland
+      pavucontrol
+      xdg-desktop-portal-hyprland
     ];
 
     home.sessionVariables = {
