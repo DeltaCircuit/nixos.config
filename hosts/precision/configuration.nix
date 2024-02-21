@@ -8,9 +8,15 @@
 
   imports = [
     ./hardware-configuration.nix
-    ../../../nixos
-    ../../../nixos/users/giri.nix
+    ../../nixos
+    ../../nixos/users/giri.nix
   ];
+
+  networking = {
+    hostName = "precision";
+  };
+
+  # modules.nixos = {};
 
   boot = {
     loader = {
