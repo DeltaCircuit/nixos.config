@@ -8,6 +8,11 @@ with lib; let
 in {
   options.modules.shells.zsh = {
     enable = mkEnableOption "enable zsh configuration";
+    initExtra = mkOption {
+      type = types.str;
+      description = "Extra zshrc entries";
+      default = "";
+    };
   };
 
   config = mkIf cfg.enable {
@@ -23,13 +28,12 @@ in {
 
       shellAliases = {
         reload = "(cd $HOME/.config/nixos;home-manager switch --flake .)";
-        rebuild = "(cd $HOME/.config/nixos;sudo nixos-rebuild switch --flake .)";        
+        rebuild = "(cd $HOME/.config/nixos;sudo nixos-rebuild switch --flake .)";
       };
 
       initExtra = ''
-        ${if config.modules.programs.yazi.enable then lib.fileContents ./helpers/yazi.sh else ""}
+        ${cfg.initExtra}
       '';
-
     };
   };
 }

@@ -1,14 +1,15 @@
-{ lib, config, ...}:
-
-with lib; let 
+{
+  lib,
+  config,
+  ...
+}:
+with lib; let
   cfg = config.modules.programs.waybar;
-
 in {
-
   imports = [
     ./settings.nix
   ];
-  
+
   options.modules.programs.waybar = {
     enable = mkEnableOption "Enable Waybar";
   };

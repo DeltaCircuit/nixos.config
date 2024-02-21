@@ -1,8 +1,12 @@
-{ inputs, pkgs, lib, config, ...}:
-
-with lib;
-let cfg = config.modules.mpd;
-
+{
+  inputs,
+  pkgs,
+  lib,
+  config,
+  ...
+}:
+with lib; let
+  cfg = config.modules.mpd;
 in {
   options = {
     modules = {

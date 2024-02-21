@@ -4,7 +4,7 @@
   inputs,
   lib,
   ...
-}: 
+}:
 with lib; let
   cfg = config.modules.wms.hyprland;
 in {
@@ -33,7 +33,7 @@ in {
           gaps_in = 5;
           gaps_out = 20;
           border_size = 2;
-          active_border_color = "0xffd8dee9"; 
+          active_border_color = "0xffd8dee9";
           inactive_border_color = "0xff3b4252";
         };
 
@@ -61,21 +61,30 @@ in {
           "WLR_DRM_DEVICES,/dev/dri/card1:/dev/dri/card0"
         ];
 
-        exec_once = [
-          "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-          #"${pkgs.swaynotificationcenter}/bin/swaync"
-          #"${pkgs.kanshi}/bin/kanshi"
-          #"${pkgs.nur.repos."999eagle".swayaudioidleinhibit}/bin/sway-audio-idle-inhibit -w"
-          #"${pkgs.gammastep}/bin/gammastep"
-          #"${pkgs.swaybg}/bin/swaybg -i ${config.my.settings.wallpaper} --mode fill"
-          #"${pkgs.trayscale}/bin/trayscale --hide-window"
-          #"mullvad-gui"
-          #"solaar -w hide"
-          "blueman-applet"
-          "hyprctl setcursor Nordzy-cursors 24"
-        ]
-        ++ (if config.modules.programs.waybar.enable then [ "${pkgs.waybar}/bin/waybar" ] else [])
-        ++ (if config.modules.services.udiskie.enable then [ "udiskie &" ] else []);
+        exec_once =
+          [
+            "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+            #"${pkgs.swaynotificationcenter}/bin/swaync"
+            #"${pkgs.kanshi}/bin/kanshi"
+            #"${pkgs.nur.repos."999eagle".swayaudioidleinhibit}/bin/sway-audio-idle-inhibit -w"
+            #"${pkgs.gammastep}/bin/gammastep"
+            #"${pkgs.swaybg}/bin/swaybg -i ${config.my.settings.wallpaper} --mode fill"
+            #"${pkgs.trayscale}/bin/trayscale --hide-window"
+            #"mullvad-gui"
+            #"solaar -w hide"
+            "blueman-applet"
+            "hyprctl setcursor Nordzy-cursors 24"
+          ]
+          ++ (
+            if config.modules.programs.waybar.enable
+            then ["${pkgs.waybar}/bin/waybar"]
+            else []
+          )
+          ++ (
+            if config.modules.services.udiskie.enable
+            then ["udiskie &"]
+            else []
+          );
       };
     };
   };

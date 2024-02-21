@@ -4,7 +4,7 @@
     ./pcmanfm
     ./direnv.nix
     ./rofi.nix
-    ./starship    
+    ./starship
     ./waybar
     ./rclone.nix
     ./fd.nix

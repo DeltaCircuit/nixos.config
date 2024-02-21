@@ -1,13 +1,16 @@
-{ inputs, pkgs, lib, config, ...}:
-
 {
+  inputs,
+  pkgs,
+  lib,
+  config,
+  ...
+}: {
   imports = [
     ../../home
   ];
 
   config = {
     modules = {
-
       browsers = {
         firefox.enable = true;
       };
@@ -36,6 +39,9 @@
 
       shells = {
         zsh.enable = true;
+        zsh.initExtra = ''
+          ${lib.fileContents ./shell_helpers/unlock_data.sh}
+        '';
       };
 
       terminals = {
@@ -56,7 +62,7 @@
       };
     };
 
-    wayland.windowManager.hyprland.config =  {
+    wayland.windowManager.hyprland.config = {
       monitor = [
         "DP-3,1920x1080,0x0,1"
         "eDP-1,1920x1080,1920x0,1"

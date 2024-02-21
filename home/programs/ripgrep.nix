@@ -1,8 +1,11 @@
-{ lib, config, pkgs, ...}:
-
+{
+  lib,
+  config,
+  pkgs,
+  ...
+}:
 with lib; let
   cfg = config.modules.programs.ripgrep;
-
 in {
   options.modules.programs.ripgrep = {
     enable = mkEnableOption "Install ripgrep";

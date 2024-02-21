@@ -8,7 +8,6 @@
 with lib; let
   cfg = config.modules.wms.hyprland;
 in {
-
   config = mkIf cfg.enable {
     gtk = {
       enable = true;
@@ -18,8 +17,8 @@ in {
       };
 
       theme = {
-      name = "Nordic";
-      package = pkgs.nordic;
+        name = "Nordic";
+        package = pkgs.nordic;
       };
 
       #iconTheme = {

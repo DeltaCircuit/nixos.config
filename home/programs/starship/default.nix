@@ -1,5 +1,8 @@
-{lib, config, ...}:
-
+{
+  lib,
+  config,
+  ...
+}:
 with lib; let
   cfg = config.modules.programs.starship;
 in {

@@ -1,8 +1,5 @@
-{ lib, ... }:
-
-let
+{lib, ...}: let
   inherit (lib) types mkOption;
-
 in {
   options.my.settings = {
     default = {
@@ -13,7 +10,7 @@ in {
       };
 
       terminal = mkOption {
-        type = types.nullOr (types.enum ["alacritty" "kitty" ]);
+        type = types.nullOr (types.enum ["alacritty" "kitty"]);
         description = "Default terminal";
         default = "alacritty";
       };

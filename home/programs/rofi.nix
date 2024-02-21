@@ -12,7 +12,6 @@ in {
   };
 
   config = mkIf cfg.enable {
-    
     home.packages = with pkgs; [
       rofi-systemd
       rofi-power-menu
