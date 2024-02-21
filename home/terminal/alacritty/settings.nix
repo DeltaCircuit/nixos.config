@@ -88,5 +88,24 @@
       };
     };
 
+    font = {
+      normal = {
+        family = config.my.settings.fonts.monospace;
+        style = "Regular";
+      };
+
+      bold = {
+        family = config.my.settings.fonts.monospace;
+        style = "Bold";
+      };
+
+      italic = {
+        family = config.my.settings.fonts.monospace;
+        style = "Italic";
+      };
+
+      size = 14.0;
+    };
+
   };
 }
