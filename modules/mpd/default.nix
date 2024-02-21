@@ -22,7 +22,7 @@ in {
     services = {
       mpd = {
         enable = true;
-        user = cfg.runas
+        user = cfg.runas;
         extraConfig = ''
           audio_output {
             type "pipewire"
