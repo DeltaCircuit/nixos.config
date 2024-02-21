@@ -18,7 +18,5 @@
       homeDirectory = "/home/giri";
       stateVersion = "23.11";
     };
-  }
-
-
+  };
 }
