@@ -15,5 +15,5 @@
     username = "giri";
     homeDirectory = "/home/${config.home.username}";
     stateVersion = "23.11";
-  }
+  };
 }
