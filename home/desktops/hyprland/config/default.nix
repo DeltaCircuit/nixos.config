@@ -66,7 +66,6 @@ in {
           #"${pkgs.swaynotificationcenter}/bin/swaync"
           #"${pkgs.kanshi}/bin/kanshi"
           #"${pkgs.nur.repos."999eagle".swayaudioidleinhibit}/bin/sway-audio-idle-inhibit -w"
-          #"${pkgs.waybar}/bin/waybar"
           #"${pkgs.gammastep}/bin/gammastep"
           #"${pkgs.swaybg}/bin/swaybg -i ${config.my.settings.wallpaper} --mode fill"
           #"${pkgs.trayscale}/bin/trayscale --hide-window"
@@ -74,7 +73,8 @@ in {
           #"solaar -w hide"
           #"blueman-applet"b
           "hyprctl setcursor Nordzy-cursors 24"
-        ];
+        ]
+        ++ (if config.modules.programs.waybar.enable then [ "${pkgs.waybar}/bin/waybar" ] else []);
       };
     };
   };
