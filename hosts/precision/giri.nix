@@ -1,4 +1,4 @@
-{ config, lib, inputs, ...}:
+{ inputs, pkgs, lib, config, ...}:
 
 {
   imports = [
@@ -12,8 +12,8 @@
   };
 
   home = {
-    username = "giri";
-    homeDirectory = "/home/${config.home.username}";
+    username = lib.mkDefault "giri";
+    homeDirectory = lib.mkDefault "/home/${config.home.username}";
     stateVersion = "23.11";
   };
 }
