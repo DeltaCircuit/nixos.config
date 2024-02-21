@@ -25,6 +25,11 @@ in {
         reload = "(cd $HOME/.config/nixos;home-manager switch --flake .)";
         rebuild = "(cd $HOME/.config/nixos;sudo nixos-rebuild switch --flake .)";        
       };
+
+      initExtra = ''
+        ${if config.modules.programs.yazi.enable then lib.fileContents ./helpers/yazi.sh else ""}
+      '';
+
     };
   };
 }
