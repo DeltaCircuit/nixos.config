@@ -1,13 +1,13 @@
 { inputs, pkgs, lib, config, ...}:
 
 with lib;
-let cfg = config.modules.terminal.alacritty;
+let cfg = config.modules.terminals.alacritty;
 
 in {
   imports = [
     ./settings.nix
   ];
-  options.modules.terminal.alacritty = { enable = mkEnableOption "alacritty"; };
+  options.modules.terminals.alacritty = { enable = mkEnableOption "alacritty"; };
 
   config = mkIf cfg.enable {
 

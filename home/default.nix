@@ -23,21 +23,17 @@
       #./multiplexers/tmux.nix
       #./multiplexers/zellij
 
-      ./desktops/hyprland
 
-      #./shells/fish.nix
-      #./shells/nushell.nix
-      ./shell/zsh.nix
+      ./shells
 
-      #./terminals/alacritty.nix
-      #./terminals/foot.nix
-      #./terminals/wezterm
-      ./terminal/alacritty
+      ./terminals
 
       #./security/sops.nix
       ./programs
 
       ./services
+
+      ./wms
     ]
     ++ builtins.attrValues outputs.homeManagerModules;
 

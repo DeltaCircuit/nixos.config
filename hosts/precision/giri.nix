@@ -7,21 +7,39 @@
 
   config = {
     modules = {
-      browsers.firefox.enable = true;
-      wms.hyprland.enable = true;
-      shell.zsh.enable = true;
-      editors.vscode.enable = true;
-      terminal.alacritty.enable = true;
-      programs.fzf.enable = true;
-      programs.pcmanfm.enable = true;
-      programs.direnv.enable = true;
-      programs.rofi.enable = true;
-      # programs.starship.enable = true;
-      services.dunst.enable = true;
-      programs.waybar.enable = true;
-      services.udiskie.enable = true;
+
+      browsers = {
+        firefox.enable = true;
+      };
+
+      editors = {
+        vscode.enable = true;
+      };
+
+      programs = {
+        fzf.enable = true;
+        pcmanfm.enable = true;
+        direnv.enable = true;
+        rofi.enable = true;
+        waybar.enable = true;
+      };
+
       services = {
         blueman-applet.enable = true;
+        dunst.enable = true;
+        udiskie.enable = true;
+      };
+
+      shells = {
+        zsh.enable = true;
+      };
+
+      terminals = {
+        alacritty.enable = true;
+      };
+
+      wms = {
+        hyprland.enable = true;
       };
     };
 

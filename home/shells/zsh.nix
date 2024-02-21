@@ -4,9 +4,9 @@
   ...
 }:
 with lib; let
-  cfg = config.modules.shell.zsh;
+  cfg = config.modules.shells.zsh;
 in {
-  options.modules.shell.zsh = {
+  options.modules.shells.zsh = {
     enable = mkEnableOption "enable zsh configuration";
   };
 
