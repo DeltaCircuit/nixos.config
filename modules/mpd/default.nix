@@ -22,6 +22,7 @@ in {
     services = {
       mpd = {
         enable = true;
+        musicDirectory = "/home/${cfg.runas}/music";
         extraConfig = ''
           audio_output {
             type "pipewire"
