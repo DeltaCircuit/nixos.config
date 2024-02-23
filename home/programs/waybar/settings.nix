@@ -102,7 +102,7 @@ in {
           };
 
           clock = {
-            format = "{:%F %H:%M %Z}";
+            format = "{:%F (%A) %H:%M %Z}";
             timezones = [
               "Asia/Kolkata"
               "US/Central"
