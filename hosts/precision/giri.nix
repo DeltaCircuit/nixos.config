@@ -36,6 +36,7 @@
         blueman-applet.enable = true;
         dunst.enable = true;
         udiskie.enable = true;
+        syncthing.enable = true;
       };
 
       shells = {
