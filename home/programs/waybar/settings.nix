@@ -11,23 +11,35 @@ in {
       settings = [
         {
           layer = "top";
+          spacing = 4;
           modules-left = [
             "hyprland/workspaces"
             "hyprland/window"
           ];
 
-          modules-center = [];
+          modules-center = [
+            "clock"
+          ];
 
           modules-right = [
             "pulseaudio"
             "network"
             "cpu"
             "memory"
-            "backlight"
-            "battery"
-            "clock"
             "tray"
           ];
+
+          # modules-right = [
+          #   "idle_inhibitor"
+          #   "pulseaudio"
+          #   "network"
+          #   "cpu"
+          #   "memory"
+          #   "backlight"
+          #   "battery"
+          #   "tray"
+          #   "wireplumber"
+          # ];
 
           "hyprland/workspaces" = {
             format = "{icon}";
@@ -47,6 +59,7 @@ in {
 
           tray = {
             spacing = 10;
+            icon-size = 21;
           };
 
           network = {
@@ -55,19 +68,37 @@ in {
             "format-alt" = "{ifname} {ipaddr}/{cidr}";
           };
 
-          pulseaudio = {
-            format = "{icon}  {volume}% {format_source}";
-            format-source = " {volume}%";
-            format-source-mouted = "";
-            format-icons = {
-              headphone = "";
-              hands-free = "";
-              headset = "";
-              phone = "";
-              portable = "";
-              car = "";
-              default = ["" "" ""];
+          # pulseaudio = {
+          #   format = "{icon}  {volume}% {format_source}";
+          #   format-source = " {volume}%";
+          #   format-source-mouted = "";
+          #   format-icons = {
+          #     headphone = "";
+          #     hands-free = "";
+          #     headset = "";
+          #     phone = "";
+          #     portable = "";
+          #     car = "";
+          #     default = ["" "" ""];
+          #   };
+          # };
+          "pulseaudio" = {
+            "format" = "{icon}  {volume}%      {format_source}";
+            "format-bluetooth" = "{volume}% {icon} {format_source}";
+            "format-bluetooth-muted" = "  {icon}  {format_source}";
+            "format-muted" = "   {format_source}";
+            "format-source" = "  {volume}%";
+            "format-source-muted" = "";
+            "format-icons" = {
+              "headphone" = "";
+              "hands-free" = "";
+              "headset" = "";
+              "phone" = "";
+              "portable" = "";
+              "car" = "";
+              "default" = ["" "" ""];
             };
+            "on-click" = "pavucontrol";
           };
 
           clock = {
