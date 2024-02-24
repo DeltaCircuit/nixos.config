@@ -11,5 +11,6 @@
     ./yazi
     ./ripgrep.nix
     ./gpg.nix
+    ./ffmpeg.nix
   ];
 }

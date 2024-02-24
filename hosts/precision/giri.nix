@@ -28,6 +28,7 @@
         yazi.enable = true;
         ripgrep.enable = true;
         gpg.enable = true;
+        ffmpeg.enable = true;
       };
 
       services = {
