@@ -78,6 +78,7 @@
 
       packages = [
         pkgs.imagemagick
+        pkgs.rclone
       ];
     };
   };
