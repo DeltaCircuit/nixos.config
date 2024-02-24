@@ -12,6 +12,7 @@
     ./shells
     ./services
     ./wms
+    ./programs
   ];
 
   home-manager.extraSpecialArgs = {inherit inputs outputs;};
