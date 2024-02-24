@@ -1,8 +1,6 @@
 {
-  inputs,
   pkgs,
   lib,
-  config,
   ...
 }: {
   imports = [
@@ -78,7 +76,6 @@
 
       packages = [
         pkgs.imagemagick
-        pkgs.rclone
       ];
     };
   };
