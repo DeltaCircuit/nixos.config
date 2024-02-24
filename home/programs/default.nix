@@ -12,5 +12,6 @@
     ./ripgrep.nix
     ./gpg.nix
     ./ffmpeg.nix
+    ./exiftool.nix
   ];
 }

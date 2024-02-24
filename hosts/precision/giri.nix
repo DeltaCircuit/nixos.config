@@ -29,6 +29,7 @@
         ripgrep.enable = true;
         gpg.enable = true;
         ffmpeg.enable = true;
+        exiftool.enable = true;
       };
 
       services = {
