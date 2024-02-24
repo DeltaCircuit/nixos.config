@@ -16,6 +16,7 @@
         pkief.material-icon-theme
         arcticicestudio.nord-visual-studio-code
         jnoortheen.nix-ide
+        kamadorueda.alejandra
       ];
     };
   };
