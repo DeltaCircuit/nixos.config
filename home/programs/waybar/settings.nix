@@ -108,10 +108,23 @@ in {
               "US/Central"
             ];
             actions = {
+              on-click = "mode";
               on-scroll-up = "tz_up";
               on-scroll-down = "tz_down";
             };
-            tooltip-format = "{:%Y-%m-%d}";
+            tooltip-format = "<tt><small>{calendar}</small></tt>";
+
+            calendar = {
+              mode = "month";
+              on-scroll = 1;
+              format = {
+                months = "<span color='#ffead3'><b>{}</b></span>";
+                days = "<span color='#ecc6d9'><b>{}</b></span>";
+                weeks = "<span color='#99ffdd'><b>W{}</b></span>";
+                weekdays = "<span color='#ffcc66'><b>{}</b></span>";
+                today = "<span color='#ff6699'><b><u>{}</u></b></span>";
+              };
+            };
           };
 
           battery = {
