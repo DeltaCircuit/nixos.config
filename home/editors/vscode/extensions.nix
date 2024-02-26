@@ -13,10 +13,10 @@
         rust-lang.rust-analyzer
         tamasfe.even-better-toml
         esbenp.prettier-vscode
-        pkief.material-icon-theme
-        arcticicestudio.nord-visual-studio-code
         jnoortheen.nix-ide
         kamadorueda.alejandra
+        catppuccin.catppuccin-vsc
+        catppuccin.catppuccin-vsc-icons
       ];
     };
   };

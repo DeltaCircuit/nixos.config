@@ -1,16 +1,10 @@
-{
-  inputs,
-  pkgs,
-  lib,
-  config,
-  ...
-}: {
+{...}: {
   programs = {
     vscode = {
       userSettings = {
-        "workbench.colorTheme" = "Nord";
+        "workbench.colorTheme" = "Catppuccin Mocha";
         "window.titleBarStyle" = "custom";
-        "workbench.iconTheme" = "material-icon-theme";
+        "workbench.iconTheme" = "catppuccin-mocha";
         "[nix]"."editor.tabSize" = 2;
         "telemetry.telemetryLevel" = "off";
         "editor.fontFamily" = "'FiraCode Nerd Font Mono', 'Droid Sans Mono', 'monspace', monospace";
