@@ -30,7 +30,6 @@
         gpg.enable = true;
         ffmpeg.enable = true;
         exiftool.enable = true;
-        starship.enable = true;
       };
 
       services = {
