@@ -22,7 +22,7 @@ in {
       shellIntegration = {
         enableZshIntegration = true;
       };
-      theme = "Nord";
+      theme = "Catppuccin-Mocha";
     };
   };
 }
