@@ -39,15 +39,16 @@ in {
       in {
         #"@import" = "default";
         "*" = {
-          bg-col = mkLiteral "#2e3440";
-          bg-col-light = mkLiteral "#2e3440";
-          border-col = mkLiteral "#2e3440";
-          selected-col = mkLiteral "#2e3440";
-          blue = mkLiteral "#81a1c1";
-          fg-col = mkLiteral "#e5e9f0";
-          fg-col2 = mkLiteral "#bf616a";
-          grey = mkLiteral "#737994";
+          bg-col = mkLiteral "#1e1e2e";
+          bg-col-light = mkLiteral "#1e1e2e";
+          border-col = mkLiteral "#1e1e2e";
+          selected-col = mkLiteral "#1e1e2e";
+          blue = mkLiteral "#89b4fa";
+          fg-col = mkLiteral "#cdd6f4";
+          fg-col2 = mkLiteral "#f38ba8";
+          grey = mkLiteral "#6c7086";
           width = 600;
+          font = config.my.settings.fonts.monospace;
         };
 
         "element-text, element-icon , mode-switcher" = {
