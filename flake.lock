@@ -789,6 +789,48 @@
         "type": "github"
       }
     },
+    "hyprlang": {
+      "inputs": {
+        "nixpkgs": [
+          "hyprlock",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1708212860,
+        "narHash": "sha256-nW3Zrhh9RJcMTvOcXAaKADnJM/g6tDf3121lJtTHnYo=",
+        "owner": "hyprwm",
+        "repo": "hyprlang",
+        "rev": "11d5ccda071c153dfdc18ef65338956a51cef96a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hyprwm",
+        "repo": "hyprlang",
+        "type": "github"
+      }
+    },
+    "hyprlock": {
+      "inputs": {
+        "hyprlang": "hyprlang",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1708982332,
+        "narHash": "sha256-Zyp2349gRRS48Pd33pY4EuwOUSOfzv8rCKRZL90U8r0=",
+        "owner": "hyprwm",
+        "repo": "hyprlock",
+        "rev": "fd8b81aec8b013ba1e9102b97f6d40b560e51015",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hyprwm",
+        "repo": "hyprlock",
+        "type": "github"
+      }
+    },
     "incl": {
       "inputs": {
         "nixlib": [
@@ -1503,6 +1545,7 @@
         "flake-utils": "flake-utils",
         "home-manager": "home-manager",
         "hyprland-nix": "hyprland-nix",
+        "hyprlock": "hyprlock",
         "nixpkgs": "nixpkgs_10",
         "pre-commit-hooks": "pre-commit-hooks"
       }

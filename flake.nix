@@ -73,11 +73,13 @@
     flake-utils.url = "github:numtide/flake-utils";
     pre-commit-hooks.url = "github:cachix/pre-commit-hooks.nix";
     flake-parts.url = "github:hercules-ci/flake-parts";
+    hyprlock.url = "github:hyprwm/hyprlock";
 
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     pre-commit-hooks.inputs = {
       nixpkgs.follows = "nixpkgs";
       flake-utils.follows = "flake-utils";
     };
+    hyprlock.inputs.nixpkgs.follows = "nixpkgs";
   };
 }
