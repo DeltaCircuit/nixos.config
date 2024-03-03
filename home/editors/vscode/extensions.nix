@@ -17,6 +17,7 @@
         kamadorueda.alejandra
         catppuccin.catppuccin-vsc
         catppuccin.catppuccin-vsc-icons
+        ms-vscode-remote.remote-ssh
       ];
     };
   };
