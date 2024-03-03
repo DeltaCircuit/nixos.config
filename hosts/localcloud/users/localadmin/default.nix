@@ -1,7 +1,5 @@
 {pkgs, ...}: {
-  imports = [
-    ../../../home
-  ];
+  home-manager.users.localadmin = import ./home.nix;
   users.users.localadmin = {
     isNormalUser = true;
     initialPassword = "nixos";
