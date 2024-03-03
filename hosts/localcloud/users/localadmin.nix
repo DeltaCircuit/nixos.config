@@ -1,4 +1,7 @@
 {pkgs, ...}: {
+  imports = [
+    ../../../home
+  ];
   users.users.localadmin = {
     isNormalUser = true;
     initialPassword = "nixos";

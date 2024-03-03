@@ -5,6 +5,7 @@
   imports = [
     ./hardware-configuration.nix
     ./users/localadmin.nix
+    ../../nixos
   ];
 
   boot.loader.systemd-boot.enable = true;
