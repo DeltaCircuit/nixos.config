@@ -13,6 +13,9 @@ in {
   config = mkIf cfg.enable {
     services.syncthing = {
       enable = true;
+      extraOptions = [
+        "--gui-address 0.0.0.0"
+      ];
     };
   };
 }
