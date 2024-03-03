@@ -52,11 +52,26 @@
               inherit inputs outputs;
             };
           };
+
+          localcloud = inputs.nixpkgs.lib.nixosSystem {
+            modules = [./hosts/localcloud/configuration.nix];
+            specialArgs = {
+              inherit inputs outputs;
+            };
+          };
         };
 
         homeConfigurations = {
           "giri@precision" = inputs.home-manager.lib.homeManagerConfiguration {
             modules = [./hosts/precision/giri.nix];
+            pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
+            extraSpecialArgs = {
+              inherit inputs outputs;
+            };
+          };
+
+          "localadmin@localcloud" = inputs.home-manager.lib.homeManagerConfiguration {
+            modules = [./hosts/localcloud/users/localadmin/home.nix];
             pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
             extraSpecialArgs = {
               inherit inputs outputs;
