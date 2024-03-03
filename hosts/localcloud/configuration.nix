@@ -8,11 +8,23 @@
     ../../nixos
   ];
 
+  modules.nixos = {
+    shells = {
+      zsh.enable = true;
+    };
+
+    programs = {
+      nix-ld.enable = true;
+    };
+  };
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = false;
 
-  networking.hostName = "localcloud"; # Define your hostname.
-  networking.networkmanager.enable = true; # Easiest to use and most distros use this by default.
+  networking = {
+    hostName = "localcloud";
+    networkmanager.enable = true;
+  };
 
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
