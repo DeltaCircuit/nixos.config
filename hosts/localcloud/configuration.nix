@@ -6,6 +6,7 @@
     ./hardware-configuration.nix
     ./users/localadmin
     ../../nixos
+    ./firewall.nix
   ];
 
   modules.nixos = {
