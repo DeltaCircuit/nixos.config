@@ -4,7 +4,7 @@
   ...
 }: {
   imports = [
-    ../../home
+    ../../../../home
   ];
 
   config = {
@@ -41,10 +41,6 @@
 
       shells = {
         zsh.enable = true;
-        zsh.initExtra = ''
-          ${lib.fileContents ./shell_helpers/unlock_data.sh}
-          ${lib.fileContents ./shell_helpers/unlock_vault.sh}
-        '';
       };
 
       terminals = {
@@ -73,8 +69,8 @@
     };
 
     home = {
-      username = "giri";
-      homeDirectory = "/home/giri";
+      username = "localadmin";
+      homeDirectory = "/home/localadmin";
       stateVersion = "23.11";
 
       packages = [

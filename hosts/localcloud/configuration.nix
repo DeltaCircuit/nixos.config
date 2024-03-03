@@ -4,7 +4,7 @@
 {pkgs, ...}: {
   imports = [
     ./hardware-configuration.nix
-    ./users/localadmin.nix
+    ./users/localadmin
     ../../nixos
   ];
 
