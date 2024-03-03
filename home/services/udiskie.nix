@@ -13,8 +13,11 @@ in {
   };
 
   config = mkIf cfg.enable {
-    services.udiskie.enable = true;
-    services.udiskie.automount = true;
-    services.udiskie.notify = true;
+    services.udiskie = {
+      enable = true;
+      automount = true;
+      notify = true;
+      tray = "always";
+    };
   };
 }
