@@ -14,6 +14,12 @@
         # Allow SSH
         tcp dport 22 accept
 
+        # Allow Syncthing P2P
+        tcp dport 22000 accept
+
+        # Allow Syncthing GUI
+        tcp dport 8384 accept
+
         # Drop invalid packets
         ct state invalid drop
 
