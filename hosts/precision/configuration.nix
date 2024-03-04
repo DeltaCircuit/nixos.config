@@ -2,7 +2,7 @@
   imports = [
     ./hardware-configuration.nix
     ../../nixos
-    ../../nixos/users/giri.nix
+    ./users/giri
   ];
 
   modules.nixos = {
