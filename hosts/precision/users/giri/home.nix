@@ -30,6 +30,7 @@
         gpg.enable = true;
         ffmpeg.enable = true;
         exiftool.enable = true;
+        gnucash.enable = true;
       };
 
       services = {
