@@ -1,5 +1,11 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  lib,
+  ...
+}: {
   imports = [
+    inputs.lanzaboote.nixosModules.lanzaboote
     ./hardware-configuration.nix
     ../../nixos
     ./users/giri
@@ -42,10 +48,15 @@
         };
       };
     };
+    lanzaboote = {
+      enable = true;
+      pkiBundle = "/etc/secureboot";
+    };
     loader = {
       systemd-boot = {
-        enable = true;
+        enable = lib.mkForce false;
       };
+
       efi = {
         canTouchEfiVariables = true;
       };
@@ -70,6 +81,7 @@
       wireplumber
       mpd
       qt6.qtwayland
+      sbctl
     ];
   };
 

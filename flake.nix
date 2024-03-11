@@ -11,7 +11,11 @@
 
   '';
 
-  outputs = {flake-parts, ...} @ inputs:
+  outputs = {
+    flake-parts,
+    lanzaboote,
+    ...
+  } @ inputs:
     flake-parts.lib.mkFlake {inherit inputs;} ({self, ...}: let
       inherit (self) outputs;
     in {
@@ -89,6 +93,7 @@
     pre-commit-hooks.url = "github:cachix/pre-commit-hooks.nix";
     flake-parts.url = "github:hercules-ci/flake-parts";
     hyprlock.url = "github:hyprwm/hyprlock";
+    lanzaboote.url = "github:nix-community/lanzaboote/v0.3.0";
 
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     pre-commit-hooks.inputs = {
@@ -96,5 +101,6 @@
       flake-utils.follows = "flake-utils";
     };
     hyprlock.inputs.nixpkgs.follows = "nixpkgs";
+    lanzaboote.inputs.nixpkgs.follows = "nixpkgs";
   };
 }
