@@ -13,5 +13,6 @@
     ./gpg.nix
     ./ffmpeg.nix
     ./exiftool.nix
+    ./gnucash.nix
   ];
 }
