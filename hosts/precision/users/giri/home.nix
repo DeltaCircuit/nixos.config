@@ -15,6 +15,7 @@
 
       editors = {
         vscode.enable = true;
+        helix.enable = true;
       };
 
       programs = {

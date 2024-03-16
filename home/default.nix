@@ -19,6 +19,7 @@
 
       #./editors/nvim
       ./editors/vscode
+      ./editors/helix
 
       #./multiplexers/tmux.nix
       #./multiplexers/zellij
