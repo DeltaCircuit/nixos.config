@@ -34,6 +34,8 @@
       ./services
 
       ./wms
+
+      ./devtools/lsp.nix
     ]
     ++ builtins.attrValues outputs.homeManagerModules;
 
