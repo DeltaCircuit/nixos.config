@@ -1,6 +1,7 @@
 {
   lib,
   config,
+  pkgs,
   ...
 }:
 with lib; let
@@ -18,6 +19,7 @@ in {
     services.gpg-agent = {
       enable = true;
       enableZshIntegration = true;
+      pinentryPackage = pkgs.pinentry-tty;
     };
   };
 }
