@@ -18,7 +18,9 @@ in {
   config = mkIf cfg.enable {
     programs.zsh = mkIf cfg.enable {
       enable = true;
-      enableAutosuggestions = true;
+      autosuggestion = {
+        enable = true;
+      };
       syntaxHighlighting = {
         enable = true;
         #pattern = {"rm -rf *" = "fg=black,bg=red";};
