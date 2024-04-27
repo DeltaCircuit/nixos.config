@@ -18,6 +18,7 @@
         catppuccin.catppuccin-vsc
         catppuccin.catppuccin-vsc-icons
         ms-vscode-remote.remote-ssh
+        ms-dotnettools.csdevkit
       ];
     };
   };
