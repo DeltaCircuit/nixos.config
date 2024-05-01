@@ -12,6 +12,11 @@
         "terminal.integrated.fontFamily" = "FiraCode Nerd Font";
         "nix.enableLanguageServer" = true;
         "nix.serverPath" = "nil";
+        "svelte.enable-ts-plugin" = true;
+        "[svelte]"."editor.defaultFormatter" = "svelte.svelte-vscode";
+        "[javascript]"."editor.defaultFormatter" = "esbenp.prettier-vscode";
+        "[typescript]"."editor.defaultFormatter" = "esbenp.prettier-vscode";
+        "[html]"."editor.defaultFormatter" = "esbenp.prettier-vscode";
       };
     };
   };
