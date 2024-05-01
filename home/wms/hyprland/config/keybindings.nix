@@ -63,7 +63,7 @@ in {
     wayland.windowManager.hyprland.keyBinds = {
       bind = {
         "SUPER, Return" = "exec, ${config.my.settings.default.terminal}";
-        "SUPER, a" = "exec, ${pkgs.rofi}/bin/rofi -show drun -mode drun";
+        "SUPER, a" = "exec, ${pkgs.rofi}/bin/rofi -show drun -mode drun & sleep 0.2;hyprctl dispatch focuswindow \"^(Rofi)\"";
         "SUPER, Q" = "killactive,";
         "SUPER, M" = "exit,";
         "SUPER, F" = "Fullscreen,0";
