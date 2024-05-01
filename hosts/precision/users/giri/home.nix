@@ -33,6 +33,7 @@
         exiftool.enable = true;
         gnucash.enable = true;
         obsidian.enable = true;
+        ecryptfs.enable = true;
       };
 
       services = {

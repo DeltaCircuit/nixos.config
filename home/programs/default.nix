@@ -15,5 +15,6 @@
     ./exiftool.nix
     ./gnucash.nix
     ./obsidian.nix
+    ./ecryptfs.nix
   ];
 }
