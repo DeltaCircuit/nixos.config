@@ -14,5 +14,6 @@
     ./ffmpeg.nix
     ./exiftool.nix
     ./gnucash.nix
+    ./obsidian.nix
   ];
 }

@@ -32,6 +32,7 @@
         ffmpeg.enable = true;
         exiftool.enable = true;
         gnucash.enable = true;
+        obsidian.enable = true;
       };
 
       services = {
