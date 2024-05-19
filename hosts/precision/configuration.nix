@@ -82,6 +82,7 @@
       mpd
       qt6.qtwayland
       sbctl
+      docker-compose
     ];
   };
 
@@ -93,4 +94,10 @@
   hardware.opengl.extraPackages = with pkgs; [
     intel-media-driver
   ];
+
+  virtualisation = {
+    docker = {
+      enable = true;
+    };
+  };
 }
