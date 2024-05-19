@@ -9,6 +9,19 @@
 
   config = {
     modules = {
+      installer = {
+        packages = [
+          "jq"
+          "imagemagick"
+          "yt-dlp"
+          "rclone"
+          "fd"
+          "gnucash"
+          "obsidian"
+          "ripgrep"
+          "digikam"
+        ];
+      };
       browsers = {
         firefox.enable = true;
       };
@@ -24,16 +37,8 @@
         direnv.enable = true;
         rofi.enable = true;
         waybar.enable = true;
-        rclone.enable = true;
-        fd.enable = true;
         yazi.enable = true;
-        ripgrep.enable = true;
         gpg.enable = true;
-        ffmpeg.enable = true;
-        exiftool.enable = true;
-        gnucash.enable = true;
-        obsidian.enable = true;
-        ecryptfs.enable = true;
       };
 
       services = {
@@ -82,10 +87,6 @@
       username = "giri";
       homeDirectory = "/home/giri";
       stateVersion = "23.11";
-
-      packages = [
-        pkgs.imagemagick
-      ];
     };
   };
 }
