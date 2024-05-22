@@ -81,6 +81,14 @@
               inherit inputs outputs;
             };
           };
+
+          "giridharan@giridharan-gm" = inputs.home-manager.lib.homeManagerConfiguration {
+            modules = [./hosts/hp_probook/users/giri/home.nix];
+            pkgs = inputs.nixpkgs.legacyPackages.x86_64-linux;
+            extraSpecialArgs = {
+              inherit inputs outputs;
+            };
+          };
         };
       };
     });
