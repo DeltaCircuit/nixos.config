@@ -20,6 +20,7 @@
           "obsidian"
           "ripgrep"
           "digikam"
+          "exiftool"
         ];
       };
       browsers = {
