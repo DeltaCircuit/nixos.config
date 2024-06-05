@@ -11,6 +11,9 @@
 
   config = {
     modules = {
+      installer.packages = [
+        "i3lock"
+      ];
       shells.zsh.enable = true;
       programs.fzf.enable = true;
       programs.direnv.enable = true;
