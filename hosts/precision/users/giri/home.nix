@@ -22,6 +22,7 @@
           "digikam"
           "exiftool"
           "git-credential-manager"
+          "pass"
         ];
       };
       browsers = {
