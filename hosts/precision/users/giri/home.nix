@@ -21,6 +21,7 @@
           "ripgrep"
           "digikam"
           "exiftool"
+          "git-credential-manager"
         ];
       };
       browsers = {
