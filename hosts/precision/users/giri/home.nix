@@ -21,6 +21,8 @@
           "ripgrep"
           "digikam"
           "exiftool"
+          "git-credential-manager"
+          "pass"
         ];
       };
       browsers = {
@@ -53,6 +55,7 @@
         zsh.enable = true;
         zsh.initExtra = ''
           ${lib.fileContents ../../shell_helpers/unlock_data.sh}
+          ${lib.fileContents ../../shell_helpers/upgrade.sh}
           ${lib.fileContents ../../shell_helpers/unlock_vault.sh}
           bindkey "^[[1;5C" forward-word
           bindkey "^[[1;5D" backward-word
