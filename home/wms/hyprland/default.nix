@@ -56,7 +56,7 @@ in {
       grimblast
       #slurp
       #sway-contrib.grimshot
-      xdg-desktop-portal-hyprland
+      #xdg-desktop-portal-hyprland
       #satty
     ];
 
