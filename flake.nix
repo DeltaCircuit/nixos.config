@@ -106,7 +106,6 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     pre-commit-hooks.inputs = {
       nixpkgs.follows = "nixpkgs";
-      flake-utils.follows = "flake-utils";
     };
     hyprlock.inputs.nixpkgs.follows = "nixpkgs";
     lanzaboote.inputs.nixpkgs.follows = "nixpkgs";
