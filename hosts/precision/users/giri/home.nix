@@ -64,6 +64,7 @@
 
       terminals = {
         kitty.enable = true;
+        tmux.enable = true;
       };
 
       wms = {

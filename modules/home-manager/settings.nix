@@ -10,7 +10,7 @@ in {
       };
 
       terminal = mkOption {
-        type = types.nullOr (types.enum ["alacritty" "kitty"]);
+        type = types.nullOr (types.enum ["alacritty" "kitty" "tmux" "wezterm"]);
         description = "Default terminal";
         default = "alacritty";
       };
