@@ -2,14 +2,44 @@
   description = ''
 
 
-    ██╗  ██╗ ██████╗ ███╗   ███╗███████╗██╗      █████╗ ██████╗ ██╗  ██╗
-    ██║  ██║██╔═══██╗████╗ ████║██╔════╝██║     ██╔══██╗██╔══██╗╚██╗██╔╝
-    ███████║██║   ██║██╔████╔██║█████╗  ██║     ███████║██████╔╝ ╚███╔╝
-    ██╔══██║██║   ██║██║╚██╔╝██║██╔══╝  ██║     ██╔══██║██╔══██╗ ██╔██╗
-    ██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗███████╗██║  ██║██████╔╝██╔╝ ██╗
-    ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝
+    ██████╗ ███████╗██╗  ████████╗ █████╗  ██████╗██╗██████╗  ██████╗██╗   ██╗██╗████████╗
+    ██╔══██╗██╔════╝██║  ╚══██╔══╝██╔══██╗██╔════╝██║██╔══██╗██╔════╝██║   ██║██║╚══██╔══╝
+    ██║  ██║█████╗  ██║     ██║   ███████║██║     ██║██████╔╝██║     ██║   ██║██║   ██║
+    ██║  ██║██╔══╝  ██║     ██║   ██╔══██║██║     ██║██╔══██╗██║     ██║   ██║██║   ██║
+    ██████╔╝███████╗███████╗██║   ██║  ██║╚██████╗██║██║  ██║╚██████╗╚██████╔╝██║   ██║
+    ╚═════╝ ╚══════╝╚══════╝╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═╝   ╚═╝
 
   '';
+
+  inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    hyprland-nix = {
+      url = "github:spikespaz/hyprland-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    flake-utils.url = "github:numtide/flake-utils";
+
+    pre-commit-hooks = {
+      url = "github:cachix/pre-commit-hooks.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    flake-parts.url = "github:hercules-ci/flake-parts";
+
+    hyprlock.url = "github:hyprwm/hyprlock";
+
+    lanzaboote = {
+      url = "github:nix-community/lanzaboote/v0.3.0";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+  };
 
   outputs = {
     flake-parts,
@@ -92,22 +122,4 @@
         };
       };
     });
-
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    home-manager.url = "github:nix-community/home-manager";
-    hyprland-nix.url = "github:spikespaz/hyprland-nix";
-    flake-utils.url = "github:numtide/flake-utils";
-    pre-commit-hooks.url = "github:cachix/pre-commit-hooks.nix";
-    flake-parts.url = "github:hercules-ci/flake-parts";
-    hyprlock.url = "github:hyprwm/hyprlock";
-    lanzaboote.url = "github:nix-community/lanzaboote/v0.3.0";
-
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    pre-commit-hooks.inputs = {
-      nixpkgs.follows = "nixpkgs";
-    };
-    hyprlock.inputs.nixpkgs.follows = "nixpkgs";
-    lanzaboote.inputs.nixpkgs.follows = "nixpkgs";
-  };
 }
