@@ -11,7 +11,9 @@
 
   config = {
     modules = {
-      installer.packages = [];
+      installer.packages = [
+        "fd"
+      ];
       shells.zsh.enable = true;
       programs.fzf.enable = true;
       programs.direnv.enable = true;
