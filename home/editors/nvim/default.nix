@@ -12,6 +12,7 @@ in {
   imports = [
     nixvim.homeManagerModules.nixvim
     ./options.nix
+    ./plugins
   ];
 
   options.modules.editors.nvim = with types; {
