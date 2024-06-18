@@ -14,6 +14,7 @@ in {
     ./options.nix
     ./plugins
     ./colorschems/catppuccin_mocha.nix
+    ./startup.nix
   ];
 
   options.modules.editors.nvim = with types; {
