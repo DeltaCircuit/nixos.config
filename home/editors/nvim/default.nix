@@ -2,6 +2,7 @@
   inputs,
   config,
   lib,
+  pkgs,
   ...
 }:
 with lib;
@@ -10,6 +11,10 @@ with inputs; let
 in {
   imports = [
     nixvim.homeManagerModules.nixvim
+    ./options.nix
+    ./plugins
+    ./colorschems/catppuccin_mocha.nix
+    ./startup.nix
   ];
 
   options.modules.editors.nvim = with types; {
@@ -20,6 +25,7 @@ in {
     programs.nixvim = {
       enable = true;
       defaultEditor = true;
+      extraPlugins = with pkgs.vimPlugins; [plenary-nvim];
     };
   };
 }

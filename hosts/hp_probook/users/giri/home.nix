@@ -12,7 +12,7 @@
   config = {
     modules = {
       installer.packages = [
-        "i3lock"
+        "fd"
       ];
       shells.zsh.enable = true;
       programs.fzf.enable = true;
@@ -20,6 +20,7 @@
       programs.starship.enable = true;
       terminals.kitty.enable = true;
       editors.helix.enable = true;
+      editors.nvim.enable = true;
     };
 
     my.settings = {
