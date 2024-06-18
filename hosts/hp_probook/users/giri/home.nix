@@ -11,12 +11,14 @@
 
   config = {
     modules = {
+      installer.packages = [];
       shells.zsh.enable = true;
       programs.fzf.enable = true;
       programs.direnv.enable = true;
       programs.starship.enable = true;
       terminals.kitty.enable = true;
       editors.helix.enable = true;
+      editors.nvim.enable = true;
     };
 
     my.settings = {
