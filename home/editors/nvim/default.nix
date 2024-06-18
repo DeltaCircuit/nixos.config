@@ -13,6 +13,7 @@ in {
     nixvim.homeManagerModules.nixvim
     ./options.nix
     ./plugins
+    ./colorschems/catppuccin_mocha.nix
   ];
 
   options.modules.editors.nvim = with types; {
