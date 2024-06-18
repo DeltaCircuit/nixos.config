@@ -10,7 +10,7 @@ in {
       };
 
       terminal = mkOption {
-        type = types.nullOr (types.enum ["alacritty" "kitty"]);
+        type = types.nullOr (types.enum ["alacritty" "kitty" "tmux" "wezterm"]);
         description = "Default terminal";
         default = "alacritty";
       };
@@ -22,9 +22,9 @@ in {
       };
 
       editor = mkOption {
-        type = types.nullOr (types.enum ["code"]);
+        type = types.nullOr (types.enum ["code" "nvim"]);
         description = "Default editor";
-        default = "code";
+        default = "nvim";
       };
     };
 

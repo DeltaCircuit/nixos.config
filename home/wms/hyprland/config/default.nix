@@ -9,6 +9,10 @@ with lib; let
   cfg = config.modules.wms.hyprland;
 in {
   config = mkIf cfg.enable {
+    programs.hyprlock = {
+      enable = true;
+    };
+
     wayland.windowManager.hyprland = {
       enable = config.modules.wms.hyprland.enable;
       package = pkgs.hyprland;

@@ -32,6 +32,7 @@
       editors = {
         vscode.enable = true;
         helix.enable = true;
+        nvim.enable = true;
       };
 
       programs = {
@@ -64,6 +65,7 @@
 
       terminals = {
         kitty.enable = true;
+        tmux.enable = true;
       };
 
       wms = {
