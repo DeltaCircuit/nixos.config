@@ -4,5 +4,6 @@
     ./telescope.nix
     ./lsps
     ./completions.nix
+    ./lualine.nix
   ];
 }
