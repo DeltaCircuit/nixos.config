@@ -22,9 +22,9 @@ in {
       };
 
       editor = mkOption {
-        type = types.nullOr (types.enum ["code"]);
+        type = types.nullOr (types.enum ["code" "nvim"]);
         description = "Default editor";
-        default = "code";
+        default = "nvim";
       };
     };
 
