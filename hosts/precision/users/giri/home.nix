@@ -21,6 +21,8 @@
           "ripgrep"
           "digikam"
           "exiftool"
+          "git-credential-manager"
+          "pass"
         ];
       };
       browsers = {
@@ -30,6 +32,7 @@
       editors = {
         vscode.enable = true;
         helix.enable = true;
+        nvim.enable = true;
       };
 
       programs = {
@@ -53,6 +56,7 @@
         zsh.enable = true;
         zsh.initExtra = ''
           ${lib.fileContents ../../shell_helpers/unlock_data.sh}
+          ${lib.fileContents ../../shell_helpers/upgrade.sh}
           ${lib.fileContents ../../shell_helpers/unlock_vault.sh}
           bindkey "^[[1;5C" forward-word
           bindkey "^[[1;5D" backward-word
@@ -61,6 +65,7 @@
 
       terminals = {
         kitty.enable = true;
+        tmux.enable = true;
       };
 
       wms = {
