@@ -1,8 +1,4 @@
-{pkgs, ...}: {
-  home.packages = with pkgs; [
-    alejandra
-    statix
-  ];
+{...}: {
   programs.nixvim = {
     plugins = {
       conform-nvim = {

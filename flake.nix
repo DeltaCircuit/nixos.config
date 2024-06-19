@@ -82,9 +82,10 @@
           packages = with pkgs; [
             alejandra
             nil
+            statix
           ];
 
-          name = "homelabx";
+          name = "DeltaCircuit";
           meta.description = "default nix dev env";
 
           shellHook = ''
