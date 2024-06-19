@@ -6,7 +6,7 @@
   programs.nixvim = {
     plugins = {
       lsp.servers.jsonls.enable = true;
-      confirm-nvim = {
+      conform-nvim = {
         formattersByFt = {
           json = ["prettier"];
         };
