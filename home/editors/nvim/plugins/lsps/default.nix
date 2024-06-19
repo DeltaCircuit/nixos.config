@@ -1,6 +1,7 @@
 {...}: {
   imports = [
     ./python.nix
+    ./nix.nix
   ];
   programs.nixvim = {
     plugins = {

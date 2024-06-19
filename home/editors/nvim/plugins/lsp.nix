@@ -1,6 +1,22 @@
-{...}: {
+{pkgs, ...}: {
+  home.packages = with pkgs; [
+    alejandra
+    statix
+  ];
   programs.nixvim = {
     plugins = {
+      conform-nvim = {
+        enable = true;
+        formatOnSave = {
+          lspFallback = true;
+          timeoutMs = 500;
+        };
+      };
+
+      lint = {
+        enable = true;
+      };
+
       lsp = {
         enable = true;
 

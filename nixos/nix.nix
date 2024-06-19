@@ -1,9 +1,4 @@
-{
-  config,
-  lib,
-  pkgs,
-  ...
-}: {
+{lib, ...}: {
   nix = {
     settings = {
       trusted-users = ["root" "@wheel"];

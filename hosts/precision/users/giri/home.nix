@@ -43,6 +43,7 @@
         waybar.enable = true;
         yazi.enable = true;
         gpg.enable = true;
+        starship.enable = true;
       };
 
       services = {
