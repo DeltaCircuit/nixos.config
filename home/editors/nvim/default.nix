@@ -26,6 +26,8 @@ in {
       enable = true;
       defaultEditor = true;
       extraPlugins = with pkgs.vimPlugins; [plenary-nvim];
+
+      extraConfigLua = builtins.readFile ./reload.lua;
     };
   };
 }
