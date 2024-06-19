@@ -10,7 +10,7 @@
 
       conform-nvim = {
         formattersByFt = {
-          py = ["black"];
+          python = ["black"];
         };
 
         formatters = {
