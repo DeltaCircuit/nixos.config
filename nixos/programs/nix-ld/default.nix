@@ -18,9 +18,7 @@ in {
     programs.nix-ld = {
       enable = true;
       libraries = with pkgs;
-        [
-        ]
-        ++ cfg.extra-libraries;
+        cfg.extra-libraries;
     };
   };
 }

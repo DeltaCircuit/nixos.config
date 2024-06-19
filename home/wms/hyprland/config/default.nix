@@ -14,7 +14,7 @@ in {
     };
 
     wayland.windowManager.hyprland = {
-      enable = config.modules.wms.hyprland.enable;
+      inherit (config.modules.wms.hyprland) enable;
       package = pkgs.hyprland;
 
       reloadConfig = true;

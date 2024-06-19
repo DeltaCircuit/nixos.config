@@ -5,15 +5,11 @@
 
   config = {
     modules = {
+      installer.packages = [];
       programs = {
         fzf.enable = true;
         direnv.enable = true;
-        rclone.enable = true;
-        fd.enable = true;
         yazi.enable = true;
-        ripgrep.enable = true;
-        ffmpeg.enable = true;
-        exiftool.enable = true;
       };
 
       services = {

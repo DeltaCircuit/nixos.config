@@ -23,9 +23,7 @@ in {
   config = {
     home = {
       packages =
-        [
-        ]
-        ++ (
+        (
           if cfg.terraform.enable
           then [pkgs.terraform_ls]
           else []

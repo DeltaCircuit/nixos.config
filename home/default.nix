@@ -1,5 +1,4 @@
 {
-  inputs,
   lib,
   pkgs,
   config,
@@ -8,7 +7,6 @@
 }: {
   imports =
     [
-      #inputs.nixvim.homeManagerModules.nixvim
       #inputs.nur.hmModules.nur
       #inputs.impermanence.nixosModules.home-manager.impermanence
 
