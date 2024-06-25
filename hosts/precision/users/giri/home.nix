@@ -95,5 +95,9 @@
       homeDirectory = "/home/giri";
       stateVersion = "23.11";
     };
+
+    home.packages = with pkgs; [
+      python311
+    ];
   };
 }
