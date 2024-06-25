@@ -32,7 +32,7 @@ in {
 
     xdg.configFile.nvim.source = builtins.fetchGit {
       url = "https://github.com/homelabx/nvim.config.git";
-      rev = "d343b5b7e906e48ba107d789f5a64bfb2f75cd7c";
+      rev = "780d189f43483a10a8063a1c9894e3d97136bcc4";
     };
   };
 }
