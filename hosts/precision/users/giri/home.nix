@@ -32,7 +32,7 @@
       editors = {
         vscode.enable = true;
         helix.enable = true;
-        nvim.enable = true;
+        # nvim.enable = true;
       };
 
       programs = {

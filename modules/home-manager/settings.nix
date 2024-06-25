@@ -24,7 +24,7 @@ in {
       editor = mkOption {
         type = types.nullOr (types.enum ["code" "nvim"]);
         description = "Default editor";
-        default = "nvim";
+        default = "code";
       };
     };
 

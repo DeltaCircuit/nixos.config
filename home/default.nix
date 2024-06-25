@@ -15,7 +15,7 @@
 
       ./browsers/firefox.nix
 
-      ./editors/nvim
+      # ./editors/nvim
       ./editors/vscode
       ./editors/helix
 
@@ -43,7 +43,6 @@
 
   programs = {
     home-manager.enable = true;
-    nixvim.enable = true;
   };
 
   home.sessionVariables.EDITOR = config.my.settings.default.editor;
