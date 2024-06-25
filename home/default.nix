@@ -15,7 +15,7 @@
 
       ./browsers/firefox.nix
 
-      # ./editors/nvim
+      ./editors/nvim
       ./editors/vscode
       ./editors/helix
 
