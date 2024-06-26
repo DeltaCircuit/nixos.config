@@ -30,9 +30,9 @@ in {
       # extraConfigLua = builtins.readFile ./reload.lua;
     };
 
-    xdg.configFile.nvim.source = builtins.fetchGit {
-      url = "https://github.com/homelabx/nvim.config.git";
-      rev = "e6e69cfc390b19a84b23b687e0ea5ff45d92f394";
+    xdg.configFile.nvim = {
+      source = "${inputs.hl-nvim-config}";
+      recursive = true;
     };
   };
 }

@@ -57,6 +57,11 @@
     nixvim = {
       url = "github:nix-community/nixvim";
     };
+
+    hl-nvim-config = {
+      url = "github:homelabx/nvim.config";
+      flake = false;
+    };
   };
 
   outputs = {

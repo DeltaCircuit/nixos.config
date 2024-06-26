@@ -342,6 +342,22 @@
         "type": "github"
       }
     },
+    "hl-nvim-config": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1719377711,
+        "narHash": "sha256-X11+oB9lkg14dG8oCwt9bc/f5ikndg1qoIWn/UG3MZo=",
+        "owner": "homelabx",
+        "repo": "nvim.config",
+        "rev": "91f90559fab70ba10534053ec32a17d7b36d6d49",
+        "type": "github"
+      },
+      "original": {
+        "owner": "homelabx",
+        "repo": "nvim.config",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -1169,6 +1185,7 @@
       "inputs": {
         "flake-parts": "flake-parts",
         "flake-utils": "flake-utils",
+        "hl-nvim-config": "hl-nvim-config",
         "home-manager": "home-manager",
         "hyprland-git": "hyprland-git",
         "hyprland-nix": "hyprland-nix",
