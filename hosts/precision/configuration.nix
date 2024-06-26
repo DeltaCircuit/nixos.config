@@ -91,7 +91,7 @@
   # Bluetooth
   hardware.bluetooth.enable = true;
 
-  hardware.opengl.extraPackages = with pkgs; [
+  hardware.graphics.extraPackages = with pkgs; [
     intel-media-driver
   ];
 
