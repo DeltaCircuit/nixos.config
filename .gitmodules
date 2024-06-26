@@ -1,3 +1,0 @@
-[submodule "home/editors/nvim/config"]
-	path = home/editors/nvim/config
-	url = https://github.com/homelabx/nvim.config
