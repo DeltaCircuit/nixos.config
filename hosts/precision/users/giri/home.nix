@@ -98,7 +98,7 @@
 
     home.packages = with pkgs; [
       python311
-      dotnetCorePackages.dotnet_8.runtime
+      gcc
     ];
   };
 }
