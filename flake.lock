@@ -345,11 +345,11 @@
     "hl-nvim-config": {
       "flake": false,
       "locked": {
-        "lastModified": 1719556276,
-        "narHash": "sha256-ogyu7t3cWW8dq6tDQmw6KRnUFZhsfNeGgL7JqLbOOAU=",
+        "lastModified": 1719556502,
+        "narHash": "sha256-sxS8zAKmArfZurjMfXsL4iTVoW4cqz7eoytraZxH71Y=",
         "owner": "homelabx",
         "repo": "nvim.config",
-        "rev": "66d6a293907f96d147f3cc5022e83d3d0f47800a",
+        "rev": "82c2020647ba0110570fa70f87df6e9cb7820535",
         "type": "github"
       },
       "original": {
