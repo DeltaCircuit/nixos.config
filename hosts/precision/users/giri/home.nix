@@ -21,8 +21,6 @@
           "ripgrep"
           "digikam"
           "exiftool"
-          "git-credential-manager"
-          "pass"
           "alejandra"
         ];
       };
