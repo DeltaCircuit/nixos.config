@@ -23,6 +23,7 @@
           "exiftool"
           "git-credential-manager"
           "pass"
+          "alejandra"
         ];
       };
       browsers = {
@@ -99,6 +100,7 @@
     home.packages = with pkgs; [
       python311
       gcc
+      gnumake
     ];
   };
 }
