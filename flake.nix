@@ -58,6 +58,11 @@
       url = "github:homelabx/nvim.config";
       flake = false;
     };
+
+    dotfiles = {
+      url = "github:deltacircuit/.config/refactor";
+      flake = false;
+    };
   };
 
   outputs = {

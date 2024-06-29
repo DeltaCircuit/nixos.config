@@ -52,6 +52,23 @@
         "type": "github"
       }
     },
+    "dotfiles": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1719642918,
+        "narHash": "sha256-fl3ffUsWGI9vgg79wrF/12dkF11cdSD7MnIuI8NnxIM=",
+        "owner": "deltacircuit",
+        "repo": ".config",
+        "rev": "c88df1ee0e8c317de189ee975b794d7754c2edfa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "deltacircuit",
+        "ref": "refactor",
+        "repo": ".config",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -960,6 +977,7 @@
     },
     "root": {
       "inputs": {
+        "dotfiles": "dotfiles",
         "flake-parts": "flake-parts",
         "flake-utils": "flake-utils",
         "hl-nvim-config": "hl-nvim-config",

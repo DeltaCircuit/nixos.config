@@ -69,7 +69,8 @@
       };
 
       wms = {
-        hyprland.enable = true;
+        hyprland.enable = false;
+        sway.enable = true;
       };
     };
 
