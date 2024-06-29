@@ -2,6 +2,7 @@
   lib,
   config,
   pkgs,
+  inputs,
   ...
 }:
 with lib; let
@@ -13,6 +14,7 @@ in {
 
   config = mkIf cfg.enable {
     home.packages = with pkgs; [
+      dmenu
       grim
       slurp
       wl-clipboard
@@ -23,6 +25,9 @@ in {
       enable = true;
     };
 
-    xdg.configFile."sway/config".text = builtins.readFile ./config;
+    xdg.configFile.sway = {
+      source = "${inputs.dotfiles}/sway";
+      recursive = true;
+    };
   };
 }
