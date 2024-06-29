@@ -69,7 +69,6 @@
       };
 
       wms = {
-        hyprland.enable = false;
         sway.enable = true;
       };
     };
@@ -83,12 +82,12 @@
       };
     };
 
-    wayland.windowManager.hyprland.config = {
-      monitor = [
-        "DP-3,1920x1080,0x0,1"
-        "eDP-1,1920x1080,1920x0,1"
-      ];
-    };
+    # wayland.windowManager.hyprland.config = {
+    #   monitor = [
+    #     "DP-3,1920x1080,0x0,1"
+    #     "eDP-1,1920x1080,1920x0,1"
+    #   ];
+    # };
 
     home = {
       username = "giri";

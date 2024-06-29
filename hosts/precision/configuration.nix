@@ -20,10 +20,6 @@
       blueman.enable = true;
     };
 
-    wms = {
-      hyprland.enable = true;
-    };
-
     programs = {
       nix-ld.enable = true;
     };
