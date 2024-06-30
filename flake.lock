@@ -55,11 +55,11 @@
     "dotfiles": {
       "flake": false,
       "locked": {
-        "lastModified": 1719642918,
-        "narHash": "sha256-fl3ffUsWGI9vgg79wrF/12dkF11cdSD7MnIuI8NnxIM=",
+        "lastModified": 1719668663,
+        "narHash": "sha256-P8xU8PpKYHFLBAu+DOSA/7n6sEbbChQDiTwv7InAG2Y=",
         "owner": "deltacircuit",
         "repo": ".config",
-        "rev": "c88df1ee0e8c317de189ee975b794d7754c2edfa",
+        "rev": "43be86e0bb4d4e74a71813d61db25cf13b38afea",
         "type": "github"
       },
       "original": {
@@ -907,11 +907,11 @@
     },
     "nixpkgs_6": {
       "locked": {
-        "lastModified": 1719254875,
-        "narHash": "sha256-ECni+IkwXjusHsm9Sexdtq8weAq/yUyt1TWIemXt3Ko=",
+        "lastModified": 1719506693,
+        "narHash": "sha256-C8e9S7RzshSdHB7L+v9I51af1gDM5unhJ2xO1ywxNH8=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "2893f56de08021cffd9b6b6dfc70fd9ccd51eb60",
+        "rev": "b2852eb9365c6de48ffb0dc2c9562591f652242a",
         "type": "github"
       },
       "original": {
