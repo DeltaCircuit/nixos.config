@@ -55,11 +55,11 @@
     "dotfiles": {
       "flake": false,
       "locked": {
-        "lastModified": 1719668663,
-        "narHash": "sha256-P8xU8PpKYHFLBAu+DOSA/7n6sEbbChQDiTwv7InAG2Y=",
+        "lastModified": 1719729311,
+        "narHash": "sha256-rgFFbJ9CyZlzBMTA08Jp8Oqf4DskGNRrdmQ1viyI14A=",
         "owner": "deltacircuit",
         "repo": ".config",
-        "rev": "43be86e0bb4d4e74a71813d61db25cf13b38afea",
+        "rev": "e32769d47464592ff56690d840a4a194b797f4b3",
         "type": "github"
       },
       "original": {

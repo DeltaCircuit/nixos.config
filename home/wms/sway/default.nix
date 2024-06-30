@@ -26,7 +26,10 @@ in {
       enable = true;
       wrapperFeatures.gtk = true;
       config = null;
-      extraConfig = lib.fileContents "${inputs.dotfiles}/sway/config";
+    };
+
+    xdg.configFile.sway = {
+      source = "${inputs.dotfiles}/sway";
     };
   };
 }
