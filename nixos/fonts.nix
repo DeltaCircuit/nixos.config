@@ -10,5 +10,8 @@
     fira-code-symbols
     fira
     font-awesome
+    dejavu_fonts.full-ttf
+    liberation_ttf
+    noto-fonts
   ];
 }

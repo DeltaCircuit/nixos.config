@@ -19,15 +19,14 @@ in {
       slurp
       wl-clipboard
       mako
+      wmenu
     ];
 
     wayland.windowManager.sway = {
       enable = true;
-    };
-
-    xdg.configFile.sway = {
-      source = "${inputs.dotfiles}/sway";
-      recursive = true;
+      wrapperFeatures.gtk = true;
+      config = null;
+      extraConfig = lib.fileContents "${inputs.dotfiles}/sway/config";
     };
   };
 }
