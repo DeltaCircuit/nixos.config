@@ -29,6 +29,7 @@ in {
     };
 
     modules.programs.waybar.enable = true;
+    modules.programs.gtk.enable = true;
 
     xdg.configFile.sway = {
       source = "${inputs.dotfiles}/sway";
