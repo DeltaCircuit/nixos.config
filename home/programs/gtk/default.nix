@@ -12,6 +12,12 @@ in {
   };
 
   config = mkIf cfg.enable {
+    home.pointerCursor = {
+      name = "catppuccin-mocha-red-cursors";
+      package = pkgs.catppuccin-cursors.mochaRed;
+      size = 40;
+      gtk.enable = true;
+    };
     gtk = {
       enable = true;
       #catppuccin = {
@@ -21,6 +27,12 @@ in {
       font = {
         name = config.my.settings.fonts.regular;
         size = 12;
+      };
+
+      cursorTheme = {
+        package = pkgs.catppuccin-cursors.mochaRed;
+        name = "catppuccin-mocha-red-cursors";
+        size = 40;
       };
 
       theme = {
