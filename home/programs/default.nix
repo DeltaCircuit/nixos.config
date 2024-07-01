@@ -8,5 +8,6 @@
     ./waybar
     ./yazi
     ./gpg.nix
+    ./gtk
   ];
 }
