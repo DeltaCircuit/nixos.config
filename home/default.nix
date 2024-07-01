@@ -2,6 +2,7 @@
   lib,
   pkgs,
   config,
+  inputs,
   outputs,
   ...
 }: {
@@ -9,7 +10,7 @@
     [
       #inputs.nur.hmModules.nur
       #inputs.impermanence.nixosModules.home-manager.impermanence
-
+      # inputs.catppuccin.homeManagerModules.catppuccin
       #./programs
       #./scripts.nix
 

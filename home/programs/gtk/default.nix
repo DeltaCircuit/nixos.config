@@ -14,6 +14,10 @@ in {
   config = mkIf cfg.enable {
     gtk = {
       enable = true;
+      #catppuccin = {
+      #  enable = true;
+      #  flavor = "mocha";
+      #};
       font = {
         name = config.my.settings.fonts.regular;
         size = 12;
