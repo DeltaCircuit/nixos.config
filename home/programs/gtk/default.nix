@@ -36,8 +36,11 @@ in {
       };
 
       theme = {
-        name = "Nordic";
-        package = pkgs.nordic;
+        name = "catppuccin-mocha-red-standard+default";
+        package = pkgs.catppuccin-gtk.override {
+          accents = ["red"];
+          variant = "mocha";
+        };
       };
 
       gtk3.extraConfig = {
