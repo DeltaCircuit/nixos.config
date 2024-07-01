@@ -63,6 +63,7 @@
       url = "github:deltacircuit/.config/refactor";
       flake = false;
     };
+    catppuccin.url = "github:catppuccin/nix";
   };
 
   outputs = {
