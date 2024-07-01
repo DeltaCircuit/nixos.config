@@ -28,8 +28,11 @@ in {
       config = null;
     };
 
+    modules.programs.waybar.enable = true;
+
     xdg.configFile.sway = {
       source = "${inputs.dotfiles}/sway";
+      recursive = true;
     };
   };
 }
