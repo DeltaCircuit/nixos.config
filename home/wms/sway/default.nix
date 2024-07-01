@@ -36,5 +36,10 @@ in {
       source = "${inputs.dotfiles}/sway";
       recursive = true;
     };
+
+    xdg.configFile.swappy = {
+      source = "${inputs.dotfiles}/swappy";
+      recursive = true;
+    };
   };
 }
