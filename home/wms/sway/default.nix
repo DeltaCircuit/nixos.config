@@ -20,6 +20,7 @@ in {
       wl-clipboard
       mako
       wmenu
+      swappy
     ];
 
     wayland.windowManager.sway = {
