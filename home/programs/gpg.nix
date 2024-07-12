@@ -20,6 +20,9 @@ in {
       enable = true;
       enableZshIntegration = true;
       pinentryPackage = pkgs.pinentry-tty;
+      enableSshSupport = true;
+      defaultCacheTtl = 60;
+      maxCacheTtl = 60;
     };
   };
 }
