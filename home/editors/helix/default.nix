@@ -14,7 +14,7 @@ in {
       helix = {
         enable = true;
 
-        settings = builtins.fromTOML (builtins.readFile "${inputs.dotfiles}/helix/config.toml");
+        #        settings = builtins.fromTOML (builtins.readFile "${inputs.dotfiles}/helix/config.toml");
         languages = builtins.fromTOML (builtins.readFile "${inputs.dotfiles}/helix/languages.toml");
       };
     };

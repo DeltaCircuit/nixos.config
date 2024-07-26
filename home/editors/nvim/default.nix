@@ -18,9 +18,9 @@ in {
       enable = true;
     };
 
-    xdg.configFile.nvim = {
-      source = "${inputs.dotfiles}/nvim";
-      recursive = true;
-    };
+    #    xdg.configFile.nvim = {
+    #      source = "${inputs.dotfiles}/nvim";
+    #      recursive = true;
+    #    };
   };
 }
