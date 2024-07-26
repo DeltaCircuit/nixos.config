@@ -79,6 +79,8 @@
       qt6.qtwayland
       sbctl
       docker-compose
+      wl-clipboard
+      xdg-desktop-portal-hyprland
     ];
   };
 
@@ -99,4 +101,5 @@
   };
   security.polkit.enable = true;
   programs.dconf.enable = true;
+  programs.hyprland.enable = true;
 }
