@@ -19,19 +19,19 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hyprland-git.url = "github:hyprwm/hyprland";
-    hyprland-xdph-git.url = "github:hyprwm/xdg-desktop-portal-hyprland";
-    hyprland-protocols-git.url = "github:hyprwm/xdg-desktop-portal-hyprland";
+    #hyprland-git.url = "github:hyprwm/hyprland";
+    #hyprland-xdph-git.url = "github:hyprwm/xdg-desktop-portal-hyprland";
+    #hyprland-protocols-git.url = "github:hyprwm/xdg-desktop-portal-hyprland";
 
-    hyprland-nix = {
-      url = "github:spikespaz/hyprland-nix";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        hyprland.follows = "hyprland-git";
-        hyprland-xdph.follows = "hyprland-xdph-git";
-        hyprland-protocols.follows = "hyprland-protocols-git";
-      };
-    };
+    #hyprland-nix = {
+    #  url = "github:spikespaz/hyprland-nix";
+    #  inputs = {
+    #    nixpkgs.follows = "nixpkgs";
+    #    hyprland.follows = "hyprland-git";
+    #    hyprland-xdph.follows = "hyprland-xdph-git";
+    #    hyprland-protocols.follows = "hyprland-protocols-git";
+    #  };
+    #};
 
     flake-utils.url = "github:numtide/flake-utils";
 
@@ -52,11 +52,6 @@
     sops-nix = {
       url = "github:mic92/sops-nix";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    hl-nvim-config = {
-      url = "github:homelabx/nvim.config";
-      flake = false;
     };
 
     dotfiles = {
