@@ -14,8 +14,8 @@ in {
   config = mkIf cfg.enable {
     programs.waybar = {
       enable = true;
-      settings.mainBar = builtins.fromJSON (builtins.readFile "${inputs.dotfiles}/waybar/config");
-      style = builtins.readFile "${inputs.dotfiles}/waybar/style.css";
+      #settings.mainBar = builtins.fromJSON (builtins.readFile "${inputs.dotfiles}/waybar/config");
+      #style = builtins.readFile "${inputs.dotfiles}/waybar/style.css";
       systemd.enable = true;
       systemd.target = "graphical-session-target";
     };
