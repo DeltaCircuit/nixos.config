@@ -23,6 +23,9 @@
           "exiftool"
           "alejandra"
           "vlc"
+          "bemenu"
+          "foot"
+          "wl-clipboard"
         ];
       };
       browsers = {
@@ -57,7 +60,6 @@
           ${lib.fileContents ../../shell_helpers/unlock_data.sh}
           ${lib.fileContents ../../shell_helpers/upgrade.sh}
           ${lib.fileContents ../../shell_helpers/unlock_vault.sh}
-          ${lib.fileContents ../../shell_helpers/start_sway.sh}
           bindkey "^[[1;5C" forward-word
           bindkey "^[[1;5D" backward-word
         '';
