@@ -26,6 +26,9 @@
           "bemenu"
           "foot"
           "wl-clipboard"
+          "python311"
+          "gcc"
+          "gnumake"
         ];
       };
       browsers = {
@@ -44,8 +47,6 @@
         direnv.enable = true;
         yazi.enable = true;
         gpg.enable = true;
-        gtk.enable = true;
-        # starship.enable = true;
       };
 
       services = {
@@ -81,32 +82,14 @@
       default = {
         shell = "${pkgs.zsh}/bin/zsh";
         browser = "firefox";
-        terminal = "kitty";
+        terminal = "foot";
       };
     };
-
-    # wayland.windowManager.hyprland.config = {
-    #   monitor = [
-    #     "DP-3,1920x1080,0x0,1"
-    #     "eDP-1,1920x1080,1920x0,1"
-    #   ];
-    # };
 
     home = {
       username = "giri";
       homeDirectory = "/home/giri";
       stateVersion = "23.11";
-    };
-
-    home.packages = with pkgs; [
-      python311
-      gcc
-      gnumake
-    ];
-
-    catppuccin = {
-      accent = "lavender";
-      flavor = "mocha";
     };
   };
 }
