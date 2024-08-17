@@ -44,6 +44,7 @@
         direnv.enable = true;
         yazi.enable = true;
         gpg.enable = true;
+        gtk.enable = true;
         # starship.enable = true;
       };
 
@@ -102,5 +103,10 @@
       gcc
       gnumake
     ];
+
+    catppuccin = {
+      accent = "lavender";
+      flavor = "mocha";
+    };
   };
 }

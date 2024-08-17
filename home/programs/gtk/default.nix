@@ -18,12 +18,13 @@ in {
       size = 40;
       gtk.enable = true;
     };
+    home.sessionVariables.GTK_THEME = "catppuccin-mocha-lavender-standard+normal";
     gtk = {
       enable = true;
-      #catppuccin = {
-      #  enable = true;
-      #  flavor = "mocha";
-      #};
+      catppuccin = {
+        enable = true;
+        gnomeShellTheme = true;
+      };
       font = {
         name = config.my.settings.fonts.regular;
         size = 12;
@@ -35,13 +36,13 @@ in {
         size = 40;
       };
 
-      theme = {
-        name = "catppuccin-mocha-red-standard+default";
-        package = pkgs.catppuccin-gtk.override {
-          accents = ["red"];
-          variant = "mocha";
-        };
-      };
+      #theme = {
+      #  name = "catppuccin-mocha-red-standard+default";
+      #  package = pkgs.catppuccin-gtk.override {
+      #    accents = ["red"];
+      #    variant = "mocha";
+      #  };
+      #};
 
       gtk3.extraConfig = {
         gtk-toolbar-style = "GTK_TOOLBAR_BOTH";

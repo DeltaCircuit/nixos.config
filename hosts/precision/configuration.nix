@@ -81,6 +81,7 @@
       docker-compose
       wl-clipboard
       xdg-desktop-portal-hyprland
+      libnotify
     ];
   };
 
@@ -102,4 +103,30 @@
   security.polkit.enable = true;
   programs.dconf.enable = true;
   programs.hyprland.enable = true;
+
+  services = {
+    udev = {
+      # extraRules = builtins.readFile ./udev_rules;
+      extraRules = ''
+        ACTION=="add", SUBSYSTEMS=="usb", ENV{DBUS_SESSION_BUS_ADDRESS}="unix:path=/run/user/$UID/bus", RUN+="${pkgs.writeShellScriptBin "udev_on_bat" (builtins.readFile ./toshiba.sh)}", ATTRS{serial}=="6E007970D8A68583"
+      '';
+    };
+  };
+
+  systemd.services = {
+    toshiba_ehdd_handler = {
+      enable = true;
+      after = ["dev-%i.device"];
+      description = "Handle Toshiba HDD insert";
+      unitConfig = {
+      };
+      serviceConfig = {
+        Type = "oneshot";
+        ExecStart = "/home/giri/.config/entecloud/toshiba.sh %I";
+      };
+      wantedBy = [
+        "multi-user.target"
+      ];
+    };
+  };
 }
