@@ -80,7 +80,6 @@
       mpd
       qt6.qtwayland
       sbctl
-      docker-compose
       wl-clipboard
       xdg-desktop-portal-hyprland
       libnotify
@@ -97,11 +96,6 @@
     intel-media-driver
   ];
 
-  virtualisation = {
-    docker = {
-      enable = true;
-    };
-  };
   security.polkit.enable = true;
   programs.dconf.enable = true;
   programs.hyprland.enable = true;

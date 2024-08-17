@@ -13,36 +13,31 @@ in {
 
   config = mkIf cfg.enable {
     home.pointerCursor = {
-      name = "catppuccin-mocha-red-cursors";
-      package = pkgs.catppuccin-cursors.mochaRed;
+      name = "catppuccin-mocha-lavender-cursors";
+      package = pkgs.catppuccin-cursors.mochaLavender;
       size = 40;
-      gtk.enable = true;
     };
-    home.sessionVariables.GTK_THEME = "catppuccin-mocha-lavender-standard+normal";
+    home.sessionVariables.GTK_THEME = "catppuccin-mocha-lavender-standard";
     gtk = {
       enable = true;
-      catppuccin = {
-        enable = true;
-        gnomeShellTheme = true;
-      };
       font = {
         name = config.my.settings.fonts.regular;
         size = 12;
       };
 
       cursorTheme = {
-        package = pkgs.catppuccin-cursors.mochaRed;
-        name = "catppuccin-mocha-red-cursors";
+        package = pkgs.catppuccin-cursors.mochaLavender;
+        name = "catppuccin-mocha-lavender-cursors";
         size = 40;
       };
 
-      #theme = {
-      #  name = "catppuccin-mocha-red-standard+default";
-      #  package = pkgs.catppuccin-gtk.override {
-      #    accents = ["red"];
-      #    variant = "mocha";
-      #  };
-      #};
+      theme = {
+        name = "catppuccin-mocha-lavender-standard";
+        package = pkgs.catppuccin-gtk.override {
+          accents = ["lavender"];
+          variant = "mocha";
+        };
+      };
 
       gtk3.extraConfig = {
         gtk-toolbar-style = "GTK_TOOLBAR_BOTH";
