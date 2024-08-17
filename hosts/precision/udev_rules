@@ -1,3 +1,0 @@
-# ACTION=="add", SUBSYSTEM=="block", ENV{ID_SERIAL}=="TOSHIBA_MQ04UBF100_73PPP2Y9T", TAG+="systemd", ENV{SYSTEMD_WANTS}="toshiba_ehdd_handler@%k.service"
-ACTION=="add", SUBSYSTEMS=="usb", ENV{DBUS_SESSION_BUS_ADDRESS}="unix:path=/run/user/$UID/bus", RUN="/run/current-system/sw/bin/su $USER -c /run/current-system/sw/bin/bash /home/giri/.config/entecloud/toshiba.sh", ATTRS{serial}=="6E007970D8A68583"
-
