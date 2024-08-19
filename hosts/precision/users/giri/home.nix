@@ -47,6 +47,7 @@
         direnv.enable = true;
         yazi.enable = true;
         gpg.enable = true;
+        #gtk.enable = true;
       };
 
       services = {
@@ -85,6 +86,14 @@
       username = "giri";
       homeDirectory = "/home/giri";
       stateVersion = "23.11";
+    };
+
+    home.file = {
+      ".icons/Papirus-Dark".source = "${(pkgs.catppuccin-papirus-folders.override {
+        flavor = "mocha";
+        accent = "red";
+      })}/share/icons/Papirus-Dark";
+      ".themes/Flat-Remix-GTK-Red-Dark".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Red-Dark";
     };
   };
 }
