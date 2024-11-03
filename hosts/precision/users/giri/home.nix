@@ -29,6 +29,7 @@
           "python311"
           "gcc"
           "gnumake"
+          "waybar"
         ];
       };
       browsers = {
@@ -94,6 +95,10 @@
         accent = "red";
       })}/share/icons/Papirus-Dark";
       ".themes/Flat-Remix-GTK-Red-Dark".source = "${pkgs.flat-remix-gtk}/share/themes/Flat-Remix-GTK-Red-Dark";
+      ".icons/Catppuccin-Mocha-Red".source = pkgs.fetchzip {
+        url = "https://github.com/catppuccin/cursors/releases/download/v0.3.1/catppuccin-mocha-red-cursors.zip";
+        hash = "sha256-vTdAZdW0bX88rINF4Jv47QKx6G6qym90NXlHwUS865Q=";
+      };
     };
   };
 }
